@@ -13,7 +13,7 @@ const Nav = () => {
   return (
     <>
       <Header />
-      <nav className='w-full absolute'>
+      <nav className='w-full fixed z-50'>
         <section>
           <div>
             <nav className='nav1 z-20 absolute w-full flex justify-between p-5 px-10 max-[620px]:px-4'>
@@ -25,36 +25,35 @@ const Nav = () => {
                   >
                     Get in touch
                   </button>
-                  
                 )}
                 <i
-                  className='menu ri-menu-line rounded-full text-white max-[620px]:text-1xl bg-[#9d6cff] p-4 text-2xl cursor-pointer'
+                  className={`menu ri-menu-line rounded-full text-white max-[620px]:text-1xl bg-[#9d6cff] p-4 text-2xl cursor-pointer ${menuOpen ? 'ri-close-fill' : 'ri-menu-line'}`}
                   onClick={toggleMenu}
                 ></i>
               </div>
             </nav>
 
-            {menuOpen && (
-              <nav className='nav2 absolute w-full transition-all'>
-                <div className='flex max-[620px]:flex-col-reverse max-[620px]: items-center justify-between h-screen px-10 bg-white'>
-                  <div className='mt-96  max-[620px]:mt-20 '>
-                    <p className='text-s font-bold text-[#9d6cff]'>Get in Touch</p>
-                    <p className='text-3xl mt-4'>hello@poppr.be</p>
-                    <p className='text-3xl mb-4'>+32 (0)9 335 33 33</p>
-                    <p className='text-xl'>Stapelplein 70/303</p>
-                    <p className='text-xl'>9000 Ghent</p>
-                  </div>
-                  <div className=' mr-52 z-30 max-[620px]:mr-0  mt-32 text-8xl font-serif max-[620px]:text-7xl'>
-                    <h2 className=''>work</h2>
-                    <h2 className=''>solutions</h2>
-                    <h2 className=''>about us</h2>
-                    <h2 className=''>insights</h2>
-                    <h2 className=''>careers</h2>
-                    <h2 className=''>contact</h2>
-                  </div>
+            <nav
+              className={`nav2 absolute w-full transition-transform duration-500 ease-in-out ${menuOpen ? 'transform translate-y-0' : 'transform -translate-y-full'}`}
+            >
+              <div className='flex max-[620px]:flex-col-reverse max-[620px]:items-center justify-between h-screen px-10 bg-white'>
+                <div className='mt-96 max-[620px]:mt-20'>
+                  <p className='text-s font-bold text-[#9d6cff]'>Get in Touch</p>
+                  <p className='text-3xl mt-4'>hello@poppr.be</p>
+                  <p className='text-3xl mb-4'>+32 (0)9 335 33 33</p>
+                  <p className='text-xl'>Stapelplein 70/303</p>
+                  <p className='text-xl'>9000 Ghent</p>
                 </div>
-              </nav>
-            )}
+                <div className='mr-52 z-30 max-[620px]:mr-0 mt-32 text-8xl font-serif max-[620px]:text-7xl'>
+                  <h2 className=''>work</h2>
+                  <h2 className=''>solutions</h2>
+                  <h2 className=''>about us</h2>
+                  <h2 className=''>insights</h2>
+                  <h2 className=''>careers</h2>
+                  <h2 className=''>contact</h2>
+                </div>
+              </div>
+            </nav>
           </div>
         </section>
       </nav>

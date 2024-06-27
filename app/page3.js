@@ -43,9 +43,9 @@ const Page3 = () => {
     <section className="page3 text-white px-4 md:px-44 py-10">
       <h5 className="text-center text-xs font-bold py-20">FEATURED INSIGHTS</h5>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 gap-x-16 gap-y-36">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 gap-x-16 gap-y-36 max-[620px]:gap-y-10 ">
         {cards.map((card, index) => (
-          <div key={index} className="card1 w-full flex flex-col">
+          <div key={index} className="card1 w-full flex flex-col max-[620px]:py-5">
             <div className="cursor absolute">
               <img className="h-36 w-32 rounded-2xl opacity-0" src={card.image} alt="" />
             </div>
