@@ -275,21 +275,35 @@ html{
   
   
 
-
   .card1-page2 .content-page2 {
     opacity: 0;
-    transform: translateY(4rem);
-    transition: all 0.5s ease-in-out ;
+    transform: translateY(2rem);
+    transition: all 0.5s ease-in-out;
 }
 
-/* Style for button when li is hovered */
 .card1-page2:hover .content-page2 {
     opacity: 1;
     transform: translateY(0);
-    
 }
+
+/* Disable hover effect for screens smaller than 620px */
+@media (max-width: 620px) {
+    .card1-page2 .content-page2 {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .card1-page2:hover .content-page2 {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 
 .scrollbar-none::-webkit-scrollbar {
   display: none;
 }
+
+
+

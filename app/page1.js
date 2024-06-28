@@ -8,17 +8,17 @@ const page1 = () => {
     <div class="h-screen bg-[#1D1D1F] w-full flex items-center justify-center">
         <div class="h-3/4 mt-32 w-1/3 max-[620px]:w-full max-[620px]:px-4 max-[620px]:py-20 flex items-center justify-center">
             <div class="content flex flex-col items-center justify-center font-extrabold text-white max-[620px]:w-[20rem] w-[60rem] absolute">
-                <h1 class="text-9xl text-center max-[620px]:text-5xl leading-8 font-bold">Conversion</h1>
+                <h1 class="text-9xl  text-center max-[620px]:text-5xl leading-8 font-bold">Conversion</h1>
                 
-                <div class="flex flex-col items-center py-4 md:flex-row md:items-center md:gap-4">
+                <div class="flex flex-col items-center py-4 max-[620px]:py-0 md:flex-row md:items-center md:gap-4">
                     <h1 class="text-5xl md:text-9xl">through</h1>
                     <button class="m-12  hidden md:inline-block text-sm font-bold px-8 py-4 md:mr-20 text-black bg-yellow-200 rounded-full">
                         Discover what we do
                     </button>
                 </div>
-                
-                <h1 class="text-9xl max-[620px]:text-5xl w-[55rem] leading-8 max-[620px]:text-center text-right font-bold">immersion</h1>
-                <button class="m-12  px-8 hidden max-[620px]:block max-[620px]:text-xs py-4 mr-20 text-black bg-yellow-200 rounded-full">
+                <h1 class="text-9xl ml-32 max-[620px]:ml-0 text-center max-[620px]:text-5xl leading-8 font-bold">immersion</h1>
+                {/* <h1 class="text-9xl bg-red-200 max-[620px]:text-5xl w-[55rem] leading-8 max-[620px]:text-center text-right font-bold">immersion</h1> */}
+                <button class="my-6 mx-12  px-8 hidden max-[620px]:block max-[620px]:text-xs py-4 mr-20 text-black bg-yellow-200 rounded-full">
                     Discover what we do
                 </button> 
             </div>

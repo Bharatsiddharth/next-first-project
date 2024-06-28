@@ -45,7 +45,7 @@ const page2 = () => {
 
   return (
     <>
-        <div>
+        <div className='overflow-hidden'>
             <div className='text-white flex justify-center gap-24 py-40 max-[620px]:px-4'>
                 <h6 className='text-sm max-[620px]:text-xs font-bold text-[#a374ff]' >SELECTED WORK</h6>
                 <p className='text-3xl max-[620px]:text-2xl text-center md:text-left'>
@@ -56,11 +56,11 @@ const page2 = () => {
             </div>
 
 
-            <div className="scroller    bg-red-100 flex gap-10 overflow-x-auto overflow-auto scrollbar-none space-x-4 p-4">
+            <div className="scroller rotate-3  max-[620px]:rotate-0 max-[620px]:gap-20 max-[620px]:flex max-[620px]:flex-col    flex gap-10 overflow-x-auto overflow-auto scrollbar-none space-x-4 p-4">
             {cards.map((card) => (
-                <div key={card.id} className="card1-page2 w-[35rem] h-[38rem] relative">
-                    <div className='card w-[35rem] rounded-2xl bg-red-400  overflow-hidden relative'>
-                        <div className='h-40 w-40 hidden absolute z-10 bg-red-50 rounded-full'>
+                <div key={card.id} className="card1-page2 max-[620px]:flex max-[620px]:flex-col   max-[620px]:w[20rem] max-[620px]:h-[25rem] w-[35rem] h-[33rem] relative">
+                    <div className='card w-[35rem] max-[620px]:w-[25rem] rounded-2xl bg-red-400  overflow-hidden relative'>
+                        <div className='h-40 w-40 hidden absolute z-10 rounded-full'>
                             
                         </div>
                         <img className='h-[27rem] w-full rou object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out' 
@@ -68,13 +68,20 @@ const page2 = () => {
                              alt={card.title} />
                     </div>
 
-                    <div className='content-page2 px-5 text-white absolute top-80'>
-                        <h3 className='text-3xl'>{card.description}</h3>
-                        <h1 className='text-2xl font-bold py-2'>{card.title}</h1>
-                        <h5 className='text-xs font-semibold'>{card.category}</h5>
-                    </div>
+                <div className='content-page2 mt-10 px-5 text-white md:absolute sm:relative top-80'>
+                    <h3 className='text-3xl'>{card.description}</h3>
+                    <h1 className='text-2xl font-bold py-2'>{card.title}</h1>
+                    <h5 className='text-xs font-semibold'>{card.category}</h5>
+                </div>
                 </div>
             ))}
+        </div>
+        <div className='flex max-[620px]:flex max-[620px]:items-center max-[620px]:justify-center'>
+                <button
+                    className='navButton py-4 px-8 text-dark font-semibold bg-transparent text-white border-[#9d6cff] me-2 mb-2 max-[620px]:text-base text-xl -none rounded-full border -gray-100 -blue-700 -10 -4 -gray-100 :ring-gray-700 -gray-800 -gray-400 -gray-600 :text-white :bg-gray-700 max-[620px]:py-2 max-[620px]:px-4'
+                  >
+                    Discover more of our work
+                  </button>
         </div>
 
         </div>
