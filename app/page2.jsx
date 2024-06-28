@@ -56,14 +56,14 @@ const page2 = () => {
             </div>
 
 
-            <div className="scroller  bg-red-100 flex overflow-x-auto overflow-hidden space-x-4 p-4">
+            <div className="scroller    bg-red-100 flex gap-10 overflow-x-auto overflow-auto scrollbar-none space-x-4 p-4">
             {cards.map((card) => (
-                <div key={card.id} className="card1-page2 w-[30rem] h-[35rem] relative">
-                    <div className='card w-[30rem] rounded-2xl bg-red-400  overflow-hidden relative'>
+                <div key={card.id} className="card1-page2 w-[35rem] h-[38rem] relative">
+                    <div className='card w-[35rem] rounded-2xl bg-red-400  overflow-hidden relative'>
                         <div className='h-40 w-40 hidden absolute z-10 bg-red-50 rounded-full'>
-                            {/* Any additional content */}
+                            
                         </div>
-                        <img className='h-[27rem] w-full rou object-cover transform hover:scale-110 transition-transform duration-300 ease-in-out' 
+                        <img className='h-[27rem] w-full rou object-cover transform hover:scale-105 transition-transform duration-300 ease-in-out' 
                              src={card.imageUrl}
                              alt={card.title} />
                     </div>

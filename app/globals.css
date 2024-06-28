@@ -288,3 +288,8 @@ html{
     transform: translateY(0);
     
 }
+
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}

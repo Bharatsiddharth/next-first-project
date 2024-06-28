@@ -13,12 +13,12 @@ const Page = () => {
   return (
     <>
       <div className="main">
-        {/* <Nav/>
-        <Page1/> */}
+        <Nav/>
+        <Page1/>
         <Page2/>
-        {/* <Page3/>
+        <Page3/>
         <Page4/>
-        <Footer/> */}
+        <Footer/>
 
       </div>
     </>
