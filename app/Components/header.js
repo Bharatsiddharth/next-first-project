@@ -3,10 +3,14 @@ import React from 'react'
 const header = () => {
   return (
     <>
-            <link
-                href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-                rel="stylesheet"
-            />
+      <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+        rel="stylesheet"
+      />
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></script>
+
     </>
   )
 }

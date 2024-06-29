@@ -11,13 +11,20 @@
   "dependencies": {
     "@next/font": "^14.2.4",
     "gsap": "^3.12.5",
+    "jquery": "npm:jQuery@^1.7.4",
+    "jQuery": "^1.7.4",
+    "jsdom": "^24.1.0",
     "locomotive-scroll": "^4.1.4",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
     "react-infinite-scroll": "^0.1.5",
     "react-infinite-scroll-component": "^6.1.0",
-    "remixicon": "^4.3.0"
+    "remixicon": "^4.3.0",
+    "scroll": "^3.0.1",
+    "split-type": "^0.3.4",
+    "textillate": "^0.4.1",
+    "trigger": "^1.1.1"
   },
   "devDependencies": {
     "postcss": "^8",

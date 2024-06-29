@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Components/header'
 import { Blinker } from 'next/font/google';
+import Owl from './Components/assets/images/owl.webp';
 
 import { Roboto} from 'next/font/google';
 
@@ -17,43 +18,57 @@ const footer = () => {
   return (
     <footer className={`bg-[#9d6cff] `}>
     <Header />
-    <div className="top flex flex-col md:flex-row justify-between p-8 md:p-28 px-4 md:px-40">
-      <div className="left mb-10 md:mb-0">
-        <h4 className="font-bold text-xs">STAY UP TO DATE</h4>
-        <h1 className={`text-4xl md:text-7xl font-bold pb-10 ${blinker.className}`}>
-          get our <br /> newsletter
-        </h1>
-        <div className="">
-          <div className="p-5">
-            <div className="flex flex-col md:flex-row gap-4 md:gap-10">
-              <div className="group ">
-                <input
-                  required=""
-                  type="text"
-                  className="input w-full md:w-auto"
-                />
-                <span className="highlight"></span>
-                <span className="bar"></span>
-                <label>Your Email</label>
-              </div>
-              <button className="Btn">
-                <i className="svgIcon ri-arrow-left-line"></i>
-              </button>
-            </div>
+    <div className="top flex flex-col items-center md:flex-row justify-between p-8 md:p-28 px-4 md:px-40">
+  <div className="left mb-10 md:mb-0 text-center md:text-left">
+    <h4 className="font-bold text-xs">STAY UP TO DATE</h4>
+    <h1 className={`text-4xl md:text-7xl font-bold pb-10 ${blinker.className}`}>
+      get our <br /> newsletter
+    </h1>
+    <div className="">
+      <div className="p-5">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-10 items-center">
+          <div className="group w-full md:w-auto">
+            <input
+              required=""
+              type="text"
+              className="input w-full md:w-auto"
+              placeholder="Your Email"
+            />
+            <span className="highlight"></span>
+            <span className="bar"></span>
+            <label className="hidden md:block">Your Email</label>
           </div>
-        </div>
-      </div>
-  
-      <div className="right">
-        <div className={`${roboto.className}`}>
-          <p className="text-s text-white">Get in Touch</p>
-          <p className="text-2xl md:text-4xl mt-4">hello@poppr.be</p>
-          <p className="text-2xl md:text-4xl mb-4">+32 (0)9 335 33 33</p>
-          <p className="text-xl">Stapelplein 70/303</p>
-          <p className="text-xl">9000 Ghent</p>
+          <button className="Btn mt-4 md:mt-0">
+            <i className="svgIcon ri-arrow-left-line"></i>
+          </button>
         </div>
       </div>
     </div>
+  </div>
+
+  <div className="owl mb-10 md:mb-0">
+    <img className="h-30 w-52 mx-auto" src={Owl.src} alt="owl" />
+    <div className="eyes flex justify-center mt-4">
+      <div id="left-eye" className="eye mr-2">
+        <div className="ball"></div>
+      </div>
+      <div id="right-eye" className="eye ml-2">
+        <div className="ball"></div>
+      </div>
+    </div>
+  </div>
+
+  <div className="right text-center md:text-left">
+    <div className={`${roboto.className}`}>
+      <p className="text-s text-white">Get in Touch</p>
+      <p className="text-2xl md:text-4xl mt-4">hello@poppr.be</p>
+      <p className="text-2xl md:text-4xl mb-4">+32 (0)9 335 33 33</p>
+      <p className="text-xl">Stapelplein 70/303</p>
+      <p className="text-xl">9000 Ghent</p>
+    </div>
+  </div>
+</div>
+
 
     <div className="bottomfooter flex flex-col max-[620px]:flex-col-reverse md:flex-row items-center px-4 md:px-10  py-8 border-t-2 border-gray-300 mx-4 md:mx-10 gap-5">
             <div className="left w-full md:w-1/2  mb-4 md:mb-0">

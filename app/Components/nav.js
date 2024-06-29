@@ -55,7 +55,7 @@ const Nav = () => {
   return (
     <>
       <Header />
-      <nav className='w-full fixed z-50'>
+      <nav className='w-full fixed z-[1000]'>
         <section>
           <div>
             <nav className='nav1 z-20 absolute w-full flex justify-between p-5 px-10 max-[620px]:px-4'>
