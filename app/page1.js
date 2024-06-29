@@ -1,11 +1,19 @@
 import React from 'react'
 
+import { Blinker } from 'next/font/google';
+
+const blinker = Blinker({
+    subsets: ['latin'],
+    weight: '800', 
+    // display: 'swap',
+  });
+
 const page1 = () => {
   return (
     <>
     
     <section>
-    <div class="h-screen bg-[#1D1D1F] w-full flex items-center justify-center">
+    <div class={`h-screen bg-[#1D1D1F] w-full flex items-center justify-center ${blinker.className}`}>
         <div class="h-3/4 mt-32 w-1/3 max-[620px]:w-full max-[620px]:px-4 max-[620px]:py-20 flex items-center justify-center">
             <div class="content flex flex-col items-center justify-center font-extrabold text-white max-[620px]:w-[20rem] w-[60rem] absolute">
                 <h1 class="text-9xl  text-center max-[620px]:text-5xl leading-8 font-bold">Conversion</h1>

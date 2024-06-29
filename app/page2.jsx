@@ -1,4 +1,8 @@
 import React from 'react'
+import { Roboto, NotoSans } from 'next/font/google';
+
+const roboto = Roboto({ subsets: ['latin'], weight: '400' });
+// const notoSans = NotoSans({ subsets: ['latin'], weight: '400' });
 
 const page2 = () => {
 
@@ -48,7 +52,7 @@ const page2 = () => {
         <div className='overflow-hidden'>
             <div className='text-white flex justify-center gap-24 py-40 max-[620px]:px-4'>
                 <h6 className='text-sm max-[620px]:text-xs font-bold text-[#a374ff]' >SELECTED WORK</h6>
-                <p className='text-3xl max-[620px]:text-2xl text-center md:text-left'>
+                <p className={`text-4xl max-[620px]:text-2xl text-center md:text-left ${roboto.className}`}>
                     Enjoy some of our best work <br />
                     in immersive <span className='text-[#a374ff]'>web</span>, <br />
                     <span className='text-[#17f1d1]'>augmented reality</span> and <span className='text-[#ffd074]'>virtual <br /> reality</span> experiences

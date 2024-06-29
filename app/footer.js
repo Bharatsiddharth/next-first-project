@@ -1,14 +1,26 @@
 import React from 'react'
 import Header from './Components/header'
+import { Blinker } from 'next/font/google';
+
+import { Roboto} from 'next/font/google';
+
+const roboto = Roboto({ subsets: ['latin'], weight: '400' });
+
+const blinker = Blinker({
+  subsets: ['latin'],
+  weight: '800', 
+  // display: 'swap',
+});
+
 
 const footer = () => {
   return (
-    <footer className="bg-[#9d6cff] rounded-t-">
+    <footer className={`bg-[#9d6cff] `}>
     <Header />
     <div className="top flex flex-col md:flex-row justify-between p-8 md:p-28 px-4 md:px-40">
       <div className="left mb-10 md:mb-0">
         <h4 className="font-bold text-xs">STAY UP TO DATE</h4>
-        <h1 className="text-4xl md:text-6xl font-bold pb-10">
+        <h1 className={`text-4xl md:text-7xl font-bold pb-10 ${blinker.className}`}>
           get our <br /> newsletter
         </h1>
         <div className="">
@@ -33,8 +45,8 @@ const footer = () => {
       </div>
   
       <div className="right">
-        <div className="">
-          <p className="text-s font-bold text-white">Get in Touch</p>
+        <div className={`${roboto.className}`}>
+          <p className="text-s text-white">Get in Touch</p>
           <p className="text-2xl md:text-4xl mt-4">hello@poppr.be</p>
           <p className="text-2xl md:text-4xl mb-4">+32 (0)9 335 33 33</p>
           <p className="text-xl">Stapelplein 70/303</p>
