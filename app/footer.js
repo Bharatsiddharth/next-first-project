@@ -1,7 +1,12 @@
+'use client'
 import React from 'react'
 import Header from './Components/header'
+import { useEffect } from 'react';
+// import { useState } from 'react';
 import { Blinker } from 'next/font/google';
 import Owl from './Components/assets/images/owl.webp';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import { Roboto} from 'next/font/google';
 
@@ -14,9 +19,49 @@ const blinker = Blinker({
 });
 
 
+
+
 const footer = () => {
+
+ 
+
+  useEffect(() => {
+    gsap.fromTo(
+      'footer',
+      { scaleY: 0, transformOrigin: 'center' },
+      {
+        scaleY: 1,
+        duration: 2,
+        ease: 'power4.out',
+        scrollTrigger: {
+          trigger: 'footer',
+          start: '-800px top',
+          end: '-500px end',
+          scrub: true,
+          markers: true,
+        },
+      }
+    );
+
+    gsap.to('.owl img', {
+      y: '-40%',
+      rotationX: 360,
+      duration: 2.4,
+      ease: 'bounce.inOut',
+      stagger: 0.1,
+      scrollTrigger: {
+        trigger: 'footer',
+        start: 'top center',
+        end: 'end center',
+        scrub: 5,
+        // markers: true,
+      },
+    });
+  }, []);
+
+
   return (
-    <footer className={`bg-[#9d6cff] relative `}>
+    <footer id='' className={`bg-[#9d6cff]   relative pt-10 rounded-t-[30%] `}>
     <Header />
     <div className="top flex flex-col items-center md:flex-row justify-between p-8 md:p-28 px-4 md:px-40">
   <div className="left mb-10 md:mb-0 text-center md:text-left">
@@ -46,8 +91,8 @@ const footer = () => {
     </div>
   </div>
 
-  <div className="owl mb-10 md:mb-0">
-    <img className="h-30 w-52 mx-auto" src={Owl.src} alt="owl" />
+  <div className="owl mb-10  md:mb-0">
+    <img className="h-80 w-80 mx-auto" src={Owl.src} alt="owl" />
     <div className="eyes flex justify-center mt-4">
       <div id="left-eye" className="eye mr-2">
         <div className="ball"></div>

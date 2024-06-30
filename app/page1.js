@@ -1,5 +1,6 @@
 'use client';
 import { useEffect } from 'react';
+import { useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
@@ -38,7 +39,7 @@ const page1 = () => {
   }, []);
 
     
-
+  const [isHovered, setIsHovered] = useState(false);
 
 
   return (
@@ -46,7 +47,53 @@ const page1 = () => {
 
     <section className='overflow-hidden'>
 
+
     <div class={`h-screen bg-[#1D1D1F] w-full flex items-center justify-center ${blinker.className}`}>
+
+    <div
+      className="left-arrow relative max-[750px]:hidden"
+      onMouseOver={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <div
+        className="arrow-circle"
+        style={{
+          transform: isHovered ? 'scale(0.3)' : 'scale(1)',
+          backgroundColor: isHovered ? '#A374FF' : 'transparent',
+          transition: 'transform 0.3s, background-color 0.3s'
+        }}
+      >
+        <div
+          className="arrow"
+          style={{
+            transform: isHovered ? 'scale(3)' : 'scale(1)',
+            transition: 'transform 0.3s'
+          }}
+        >
+          <img
+            id="arrow-initial"
+            src="/Components/assets/images/arrow-up.svg"
+            alt="scroll down"
+            style={{
+              position: 'relative',
+              top: isHovered ? '15vh' : '3.5vh',
+              transition: 'top 0.3s'
+            }}
+          />
+          <img
+            id="arrow-after"
+            src="/Components/assets/images/arrow-up.svg"
+            alt="scroll down"
+            style={{
+              position: 'relative',
+              top: isHovered ? '3.5vh' : '-7vh',
+              transition: 'top 0.3s'
+            }}
+          />
+        </div>
+      </div>
+            </div>
+      
 
     <div class="h-3/4 max-[1000px]:hidden mt-32 w-1/3 max-[620px]:w-full max-[620px]:px-4 max-[620px]:py-20 flex items-center justify-center">
         <div class="container noselect">
