@@ -8,6 +8,7 @@ import Footer from './footer';
 import Page3 from './page3';
 import Page4 from './page4'
 import Page2 from './page2';
+import Blob from './blob';
 
 
 const blinker = Blinker({
@@ -21,6 +22,9 @@ const Page = () => {
   return (
     <>
       <div className="main">
+
+
+        <Blob/>
         <Nav/>
         <Page1 className={blinker.className}/>
         <Page2/>

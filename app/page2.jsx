@@ -54,8 +54,8 @@ const page2 = () => {
     
 
     useEffect(() => {
-        const matchMedia = window.matchMedia("(max-[620px]:)");
-    
+        const matchMedia = window.matchMedia("(min-width: 620px)");
+      
         if (matchMedia.matches) {
           gsap.to(".card1-page2", {
             x: -1500,
@@ -63,22 +63,44 @@ const page2 = () => {
               trigger: ".scroller",
               start: "top bottom",
               end: "bottom end",
-              markers:true,
               scrub: 5,
-              markers: true
+            //   markers: true
             }
           });
         }
-    
+      
+        // Add a listener to handle window resize
+        const handleResize = () => {
+          if (matchMedia.matches) {
+            gsap.to(".card1-page2", {
+              x: -1500,
+              scrollTrigger: {
+                trigger: ".scroller",
+                start: "top bottom",
+                end: "bottom end",
+                scrub: 5,
+                // markers: true
+              }
+            });
+          } else {
+            // Kill the animation if the width is below 620px
+            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+          }
+        };
+      
+        matchMedia.addEventListener("change", handleResize);
+      
         // Clean up
         return () => {
+          matchMedia.removeEventListener("change", handleResize);
           ScrollTrigger.getAll().forEach(trigger => trigger.kill());
         };
       }, []);
+      
 
 
     useEffect(() => {
-        const rightelem = document.querySelectorAll(".scroller");
+        const rightelem = document.querySelectorAll(".card1-page2");
     
         rightelem.forEach(function(elem) {
           let cursorElem = elem.querySelector(".drag-cursor"); // Select the image inside the cursor div
@@ -113,8 +135,9 @@ const page2 = () => {
 
   return (
     <>
+        <section>
         <div className='overflow-hidden'>
-            <div className='text-white flex justify-center gap-24 py-40 max-[620px]:px-4'>
+            <div className='text-white relative flex justify-center gap-24 py-40 max-[620px]:px-4'>
                 <h6 className='text-sm max-[620px]:text-xs font-bold text-[#a374ff]' >SELECTED WORK</h6>
                 <p className={`text-4xl max-[620px]:text-2xl text-center md:text-left ${roboto.className}`}>
                     Enjoy some of our best work <br />
@@ -125,16 +148,17 @@ const page2 = () => {
 
 
             <div className=''>
-            <div className="scroller   rotate-6  max-[620px]:rotate-0 max-[620px]:gap-20 max-[620px]:flex max-[620px]:flex-col max-[620px]:items-center max-[620px]:justify-center    flex gap-10 overflow-x-auto overflow-y-hidden scrollbar-none">
+            <div className="scroller  transition-all ease-in-out duration-500  rotate-6  max-[620px]:rotate-0 max-[620px]:gap-20 max-[620px]:flex max-[620px]:flex-col max-[620px]:items-center max-[620px]:justify-center    flex gap-10 overflow-x-auto overflow-y-hidden scrollbar-none">
             
-            <div className="drag-cursor bg-[#a374ff] text-white max-[620px]:hidden h-28 w-28 flex items-center justify-center opacity-0  absolute rounded-full z-10 p-4">
-            <span className="text-center">Drag <br/> or <br /> Click</span>
-            </div>
+            
 
 
             {cards.map((card) => (
                 <div key={card.id} className="card1-page2 mt-5 max-[620px]:flex max-[620px]:flex-col   max-[620px]:w[20rem] max-[620px]:h-[25rem]   h-[33rem] relative">
                     <div className='card w-[35rem] max-[620px]:w-[20rem] rounded-2xl   overflow-hidden relative'>
+                    <div className="drag-cursor bg-[#a374ff] text-white max-[620px]:hidden h-28 w-28 flex items-center justify-center opacity-0  absolute rounded-full z-10 p-4">
+                    <span className="text-center">Drag <br/> or <br /> Click</span>
+                    </div>
                         <div className='h-40 w-40 hidden absolute z-10 rounded-full'>
                             
                         </div>
@@ -169,6 +193,7 @@ const page2 = () => {
             
         
         </div>
+        </section>
 
         {/* <div>
 

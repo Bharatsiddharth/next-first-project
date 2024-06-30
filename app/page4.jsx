@@ -11,7 +11,7 @@ const page4 = () => {
   return (
     <>
       <section>
-        <div className={`page4 text-white text-9xl pb-40 max-[620px]:pb-10 md:px-40 px-4 flex flex-col items-center justify-center`}>
+        <div className={`page4 text-white text-9xl pb-40 max-[620px]:pb-10 md:px-40 px-4 flex flex-col items-center justify-center relative`}>
           <h1 className='text-center text-5xl md:text-9xl'>let's make</h1>
           <div className='flex flex-col md:flex-row items-center justify-center gap-2 md:gap-8'>
             <h1 className='text-5xl md:text-9xl'>great work</h1>

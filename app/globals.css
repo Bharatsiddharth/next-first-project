@@ -731,3 +731,69 @@ video{
 .cursor img {
   transition: opacity 0.3s ease; /* Adjust the timing as needed */
 }
+
+
+/* blob */
+
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  
+  50% {
+    scale: 1 1.5;
+  }
+  
+  to {
+    rotate: 360deg;
+  }
+}
+
+#blob {
+  background-color: white;
+  height: 25vmax;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, aquamarine, mediumpurple);
+  animation: rotate 10s infinite;
+  opacity: 0.8;
+  filter: blur(100px);
+  z-index: 0;
+  
+}
+
+
+/* footer */
+.hover-underline-animation {
+  position: relative;
+  color: black; /* Text color */
+  /* padding-bottom: 20px; Space for the underline */
+  display: inline-block; /* Ensures the pseudo-element only affects inline elements */
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px; /* Thickness of the underline */
+  bottom: 0;
+  left: 0;
+  background-color: white; /* Underline color */
+  transform: scaleX(0); /* Initially hidden */
+  transform-origin: bottom left; /* Ensures the animation starts from the left */
+  transition: transform 0.25s ease-out; /* Animation duration and easing */
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1); /* Fully visible on hover */
+  transform-origin: bottom left; /* Ensures the animation expands to the right */
+}
+
+
+/* nav animation  */
+

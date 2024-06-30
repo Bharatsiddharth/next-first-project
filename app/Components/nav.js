@@ -60,6 +60,7 @@ const Nav = () => {
           <div>
             <nav className='nav1 z-20 absolute w-full flex justify-between p-5 px-10 max-[620px]:px-4'>
               <h1 className='font-bold max-[620px]:text-3xl text-4xl text-purple-500'>poppr</h1>
+             
               <div>
                 {!menuOpen && (
                   <button className='navButton py-4 px-8 text-dark font-semibold bg-transparent text-white border-[#9d6cff] me-2 mb-2 text-xl -none rounded-full border -gray-100 -blue-700 -10 -4 -gray-100 :ring-gray-700 -gray-800 -gray-400 -gray-600 :text-white :bg-gray-700 max-[620px]:py-2 max-[620px]:px-4'>
@@ -67,7 +68,7 @@ const Nav = () => {
                   </button>
                 )}
                 <i
-                  className={`menu ri-menu-line rounded-full text-white max-[620px]:text-1xl bg-[#9d6cff] p-4 text-2xl cursor-pointer ${menuOpen ? 'ri-close-fill' : 'ri-menu-line'}`}
+                  className={`menu  rounded-full text-white max-[620px]:text-1xl bg-[#9d6cff] p-4 text-2xl cursor-pointer ${menuOpen ? 'ri-close-circle-line' : 'ri-menu-line'}`}
                   onClick={toggleMenu}
                 ></i>
               </div>

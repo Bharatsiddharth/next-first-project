@@ -16,7 +16,7 @@ const blinker = Blinker({
 
 const footer = () => {
   return (
-    <footer className={`bg-[#9d6cff] `}>
+    <footer className={`bg-[#9d6cff] relative `}>
     <Header />
     <div className="top flex flex-col items-center md:flex-row justify-between p-8 md:p-28 px-4 md:px-40">
   <div className="left mb-10 md:mb-0 text-center md:text-left">
@@ -58,14 +58,25 @@ const footer = () => {
     </div>
   </div>
 
-  <div className="right text-center md:text-left">
-    <div className={`${roboto.className}`}>
-      <p className="text-s text-white">Get in Touch</p>
-      <p className="text-2xl md:text-4xl mt-4">hello@poppr.be</p>
-      <p className="text-2xl md:text-4xl mb-4">+32 (0)9 335 33 33</p>
-      <p className="text-xl">Stapelplein 70/303</p>
-      <p className="text-xl">9000 Ghent</p>
-    </div>
+  <div className="right-footer text-center md:text-left">
+  <div className={`${roboto.className}`}>
+  <p className="text-s text-white">
+    <span className='hover-underline-animation'>Get in Touch</span>
+  </p>
+  <p className="text-2xl md:text-4xl mt-4">
+    <span className='hover-underline-animation'>hello@poppr.be</span>
+  </p>
+  <p className="text-2xl md:text-4xl mb-4">
+    <span className='hover-underline-animation'>+32 (0)9 335 33 33</span>
+  </p>
+  <p className="text-xl">
+    <span className='hover-underline-animation'>Stapelplein 70/303</span>
+  </p>
+  <p className="text-xl">
+    <span className='hover-underline-animation'>9000 Ghent</span>
+  </p>
+</div>
+
   </div>
 </div>
 
