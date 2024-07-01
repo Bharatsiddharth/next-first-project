@@ -137,7 +137,7 @@ const page2 = () => {
     <>
         <section>
         <div className='overflow-hidden'>
-            <div className='text-white relative flex justify-center gap-24 py-40 max-[620px]:px-4'>
+            <div className='text-white relative flex justify-center gap-24 py-40 max-[620px]:py-10 max-[620px]:px-4'>
                 <h6 className='text-sm max-[620px]:text-xs font-bold text-[#a374ff]' >SELECTED WORK</h6>
                 <p className={`text-4xl max-[620px]:text-2xl text-center md:text-left ${roboto.className}`}>
                     Enjoy some of our best work <br />
@@ -167,7 +167,7 @@ const page2 = () => {
                              alt={card.title} />
                     </div>
 
-                    <div className="content-page2 flex flex-col mt-10 px-5 text-white md:absolute sm:relative top-80 max-[620px]:w-[20rem] mx-auto">
+                    <div className="content-page2 flex flex-col mt-10 px-5 max-[620px]:px-0 text-white md:absolute sm:relative top-80 max-[620px]:w-[20rem] mx-auto">
                     <h3 className="text-xl sm:text-2xl md:text-3xl">{card.description}</h3>
                     <h1 className="text-lg sm:text-xl md:text-2xl font-bold py-2">{card.title}</h1>
                     <h5 className="text-xs sm:text-sm md:text-base font-semibold">{card.category}</h5>

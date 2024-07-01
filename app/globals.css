@@ -16,7 +16,32 @@ html{
     height: 100%;
     width: 100%;
 }
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 2px #ff0000, 0 0 2px #ff0000, 0 0 2px #ff0000, 0 0 2px #ff0000;
+  }
+  20% {
+    box-shadow: 0 0 2px #ff7f00, 0 0 2px #ff7f00, 0 0 2px #ff7f00, 0 0 2px #ff7f00;
+  }
+  20% {
+    box-shadow: 0 0 2px #ffff00, 0 0 2px #ffff00, 0 0 2px #ffff00, 0 0 2px #ffff00;
+  }
+  60% {
+    box-shadow: 0 0 2px #00ff00, 0 0 2px #00ff00, 0 0 2px #00ff00, 0 0 2px #00ff00;
+  }
+  80% {
+    box-shadow: 0 0 2px #0000ff, 0 0 2px #0000ff, 0 0 2px #0000ff, 0 0 2px #0000ff;
+  }
+  100% {
+    box-shadow: 0 0 2px #8b00ff, 0 0 2px #8b00ff, 0 0 2px #8b00ff, 0 0 2px #8b00ff;
+  }
+}
+/* Apply the animation on hover */
+.navButton:hover {
+  animation: glow 1.5s infinite alternate;
+}
 
+/* nav */
 
 
 
@@ -218,8 +243,8 @@ html{
 /*works janky on mobile :<*/
 .container {
   position: relative;
-  height: 30rem;
-  width: 60rem;
+  height: 35rem;
+  width: 35rem;
   transition: 200ms;
 }
 
@@ -233,7 +258,7 @@ video{
   height: 30vw;
   border-radius: 20px;
   object-fit: cover;
-  background-color: red;
+  /* background-color: red; */
 }
 
 #card {
@@ -245,7 +270,8 @@ video{
   align-items: center;
   border-radius: 20px;
   transition: 700ms;
-  /* background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%); */
+  /* background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+  filter: blur(); */
 }
 
 .subtitle {
@@ -303,7 +329,7 @@ video{
 }
 
 .container:hover #card::before {
-  transition: 200ms;
+  /* transition: 200ms; */
   content: '';
   opacity: 80%;
 }

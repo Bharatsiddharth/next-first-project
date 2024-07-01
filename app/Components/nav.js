@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { gsap } from 'gsap';
 import Header from './header';
+import { Blinker } from 'next/font/google';
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -58,10 +59,10 @@ const Nav = () => {
       <nav className='w-full fixed z-[1000]'>
         <section>
           <div>
-            <nav className='nav1 z-20 absolute w-full flex justify-between p-5 px-10 max-[620px]:px-4'>
+            <nav className='nav1 z-20  absolute w-full flex justify-between p-5 px-10 max-[620px]:px-4'>
               <h1 className='font-bold max-[620px]:text-3xl text-4xl text-purple-500'>poppr</h1>
              
-              <div>
+              <div className=''>
                 {!menuOpen && (
                   <button className='navButton button py-4 px-8 text-dark font-semibold bg-transparent text-white border-[#9d6cff] me-2 mb-2 text-xl -none rounded-full border -gray-100 -blue-700 -10 -4 -gray-100 :ring-gray-700 -gray-800 -gray-400 -gray-600 :text-white :bg-gray-700 max-[620px]:py-2 max-[620px]:px-4'>
                     Get in touch
@@ -83,8 +84,9 @@ const Nav = () => {
                   <p className='text-xl'>Stapelplein 70/303</p>
                   <p className='text-xl'>9000 Ghent</p>
                 </div>
-                <div className='menu-elem mr-52 z-30 max-[620px]:mt-80 max-[620px]:mr-0 mt-32 text-8xl font-serif max-[620px]:text-7xl'>
-                  <h2 className=''>work</h2>
+                <div id='#offering' className='menu-elem mr-52 font-extrabold z-30 max-[620px]:mt-80 max-[620px]:mr-0 mt-32 text-8xl font-serif max-[620px]:text-7xl'>
+                  <h2 className=''><span>w</span><span>o</span><span>r</span><span>k</span>
+                  <div class=" cross-line"></div></h2>
                   <h2 className=''>solutions</h2>
                   <h2 className=''>about us</h2>
                   <h2 className=''>insights</h2>

@@ -38,15 +38,17 @@ const footer = () => {
           start: '-800px top',
           end: '-500px end',
           scrub: true,
-          markers: true,
+          // markers: true,
         },
       }
     );
 
     gsap.to('.owl img', {
-      y: '-40%',
+      rotationY: 360,
       rotationX: 360,
+      repeat: -1,
       duration: 2.4,
+      // delay:1,
       ease: 'bounce.inOut',
       stagger: 0.1,
       scrollTrigger: {
@@ -59,6 +61,8 @@ const footer = () => {
     });
   }, []);
 
+
+  
 
   return (
     <footer id='' className={`bg-[#9d6cff]   relative pt-10 rounded-t-[30%] `}>
