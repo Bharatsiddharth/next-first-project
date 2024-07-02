@@ -243,8 +243,9 @@ html{
 /*works janky on mobile :<*/
 .container {
   position: relative;
-  height: 35rem;
-  width: 35rem;
+  
+  height: 40rem;
+  width: 40rem;
   transition: 200ms;
 }
 
@@ -254,7 +255,8 @@ html{
 }
 
 video{
-  width: 100%;
+  width: 75%;
+  margin: auto;
   height: 30vw;
   border-radius: 20px;
   object-fit: cover;
@@ -284,6 +286,7 @@ video{
 .title {
   /* opacity: 0; */
   transition-duration: 300ms;
+  
   transition-timing-function: ease-in-out-out;
   transition-delay: 100ms;
   position: absolute;
@@ -787,7 +790,7 @@ video{
   translate: -50% -50%;
   border-radius: 50%;
   background: linear-gradient(to right, aquamarine, mediumpurple);
-  animation: rotate 10s infinite;
+  animation: rotate 25s infinite;
   opacity: 0.8;
   filter: blur(70px);
   z-index: 0;

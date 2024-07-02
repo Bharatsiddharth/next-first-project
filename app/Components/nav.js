@@ -11,12 +11,12 @@ const Nav = () => {
   useEffect(() => {
     if (menuOpen) {
       const animateLetters = () => {
-        const headings = document.querySelectorAll('.menu-elem h2');
-        headings.forEach((heading) => {
-          const letters = heading.textContent.split('');
-          heading.innerHTML = letters.map(letter => `<span className="inline-block">${letter}</span>`).join('');
+        // const headings = document.querySelectorAll('.menu-elem h2');
+        // headings.forEach((heading) => {
+        //   const letters = heading.textContent.split('');
+        //   heading.innerHTML = letters.map(letter => `<span className="inline-block">${letter}</span>`).join('');
           
-        });
+        // });
         
         gsap.from('.nav2-left p', {
           y: 200,
@@ -25,13 +25,22 @@ const Nav = () => {
           stagger: 0.05,
           ease: 'power4.out' // Smoother easing function
         });
-        gsap.from('.menu-elem h2', {
-          x: 300,
-          opacity: 0,
-          duration: 1,
-          stagger: 0.05,
-          ease: 'bounce.out' // Smoother easing function
-        });
+        gsap.fromTo('.menu-elem h2', 
+          {
+            x: 300,
+            opacity: 0,
+            letterSpacing: 10, // Starting with wide letter spacing
+          }, 
+          {
+            x: 0,
+            opacity: 1,
+            letterSpacing: 0, // Ending with zero letter spacing
+            duration: 1,
+            stagger: 0.05,
+            ease: 'bounce.out'
+          }
+        );
+        
       };
       
       gsap.to('.nav2', {
@@ -59,7 +68,7 @@ const Nav = () => {
       <nav className='w-full fixed z-[1000]'>
         <section>
           <div>
-            <nav className='nav1 z-20  absolute w-full flex justify-between p-5 px-10 max-[620px]:px-4'>
+            <nav className='nav1  max-[620px]:border-none border-gray-100 bg-transparent z-20  absolute max-[620px]:bg-transparent  w-full flex justify-between p-5  px-10 max-[620px]:px-4'>
               <h1 className='font-bold max-[620px]:text-3xl text-4xl text-purple-500'>poppr</h1>
              
               <div className=''>
@@ -77,15 +86,15 @@ const Nav = () => {
 
             <nav className={`nav2 absolute w-full transition-transform duration-500 ease-in-out ${menuOpen ? 'transform translate-y-0' : 'transform -translate-y-full'}`}>
               <div className='flex max-[620px]:flex-col-reverse max-[620px]:items-center justify-between h-screen px-10 bg-white'>
-                <div className='nav2-left mt-96 max-[620px]:mt-10'>
+                <div className='nav2-left mt-96  max-[620px]:mt-5'>
                   <p className='text-s font-bold text-[#9d6cff] mt-32 max-[620px]:mt-0'>Get in Touch</p>
                   <p className='text-4xl mt-4'>hello@poppr.be</p>
                   <p className='text-4xl mb-4'>+32 (0)9 335 33 33</p>
                   <p className='text-xl'>Stapelplein 70/303</p>
                   <p className='text-xl'>9000 Ghent</p>
                 </div>
-                <div id='#offering' className='menu-elem mr-52 font-extrabold z-30 max-[620px]:mt-80 max-[620px]:mr-0 mt-32 text-8xl font-serif max-[620px]:text-7xl'>
-                  <h2 className=''><span>w</span><span>o</span><span>r</span><span>k</span>
+                <div id='#offering' className='menu-elem mr-52 font-extrabold z-30 max-[620px]:mt-30 max-[620px]:mr-0 mt-32 text-8xl tracking-[10px] font-serif max-[620px]:text-7xl'>
+                  <h2 className=''>work
                   <div class=" cross-line"></div></h2>
                   <h2 className=''>solutions</h2>
                   <h2 className=''>about us</h2>

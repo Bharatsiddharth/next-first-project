@@ -44,11 +44,10 @@ const footer = () => {
     );
 
     gsap.to('.owl img', {
-      rotationY: 360,
+      y: '-15%',
       rotationX: 360,
-      repeat: -1,
       duration: 2.4,
-      // delay:1,
+      
       ease: 'bounce.inOut',
       stagger: 0.1,
       scrollTrigger: {

@@ -24,17 +24,26 @@ const page1 = () => {
     });
 
     gsap.from('h1 .char', {
+      // letterSpacing:'2rem',
       x: 300,
       opacity: 0,
       duration: 0.65,
       ease: 'bounce.out',
       stagger: 0.1,
       scrollTrigger: {
-        trigger: '[animate]',
+        trigger: '',
         start: 'top center',
       },
     });
 
+    gsap.to('h1 .char', {
+      letterSpacing:0,
+      
+      scrollTrigger: {
+        trigger: '[animate]',
+        start: 'top center',
+      },
+    });
 
 
   }, []);
@@ -68,7 +77,7 @@ const page1 = () => {
                 className="arrow"
                 style={{
                   transform: isHovered ? 'scale(3)' : 'scale(1)',
-                  transition: 'transform 0.3s'
+                  transition: 'transform 0.5s'
                 }}
               >
                 <img
@@ -78,7 +87,7 @@ const page1 = () => {
                   style={{
                     position: 'relative',
                     top: isHovered ? '15vh' : '3.5vh',
-                    transition: 'top 5s'
+                    transition: 'top 0.5s'
                   }}
                 />
                 <img
@@ -89,7 +98,7 @@ const page1 = () => {
                   style={{
                     position: 'relative',
                     top: isHovered ? '0vh' : '-7vh',
-                    transition: 'top 5s'
+                    transition: 'top 0.5s'
                   }}
                 />
               </div>
@@ -98,12 +107,12 @@ const page1 = () => {
 
 
           <div class="h-3/4 max-[1000px]:hidden mt-32 w-1/3 max-[620px]:w-full max-[620px]:px-4 max-[620px]:py-20 flex items-center justify-center">
-            <div class="content top-[40%]  left-[20rem]  flex flex-col z-[500] text-white max-[620px]:w-[20rem] w-[60rem] absolute">
-              <h1 class="text-9xl max-[620px]:hidden  text-center max-[620px]:text-5xl leading-8 font-bold">Conversion</h1>
+            <div class="content top-[40%]  left-[18rem]    flex flex-col z-[500] text-white max-[620px]:w-[20rem] w-[60rem] absolute">
+              <h1 class="text-9xl max-[620px]:hidden   text-center max-[620px]:text-5xl leading-8 font-bold">Conversion</h1>
 
               <div class="flex flex-col items-center py-4 max-[620px]:py-0 md:flex-row md:items-center md:gap-4">
                 <h1 class="through text-5xl md:text-9xl">through</h1>
-                <button class="m-12  hidden md:inline-block text-sm font-bold px-8 py-4 md:mr-20 text-black bg-yellow-200 rounded-full">
+                <button class="m-12  hidden tracking-normal md:inline-block text-sm font-bold px-8 py-4 md:mr-20 text-black bg-yellow-200 rounded-full">
                   Discover what we do
                 </button>
               </div>
@@ -114,7 +123,7 @@ const page1 = () => {
               </button>
             </div>
             <div className=' p-2 px-40'>
-              <div class="container noselect">
+              <div class="container   noselect">
                 <div class="canvas">
                   <div class="tracker tr-1">
                   </div>
@@ -144,7 +153,7 @@ const page1 = () => {
                   <div class="tracker tr-25"></div>
                   <div id="card">
                     <div class="title">
-                      <video class="object-cover  rounded-3xl" autoplay loop muted src="https://player.vimeo.com/progressive_redirect/playback/725952347/rendition/1080p/file.mp4?loc=external&signature=57a7c3522f4c7c21f8123a490b67c603be4efaa02c9c70cfde99789ab3ea9a29">
+                      <video class="object-  rounded-3xl" autoplay loop muted src="https://player.vimeo.com/progressive_redirect/playback/725952347/rendition/1080p/file.mp4?loc=external&signature=57a7c3522f4c7c21f8123a490b67c603be4efaa02c9c70cfde99789ab3ea9a29">
                       </video>
 
 

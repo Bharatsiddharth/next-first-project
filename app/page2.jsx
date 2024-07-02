@@ -69,7 +69,6 @@ const page2 = () => {
           });
         }
       
-        // Add a listener to handle window resize
         const handleResize = () => {
           if (matchMedia.matches) {
             gsap.to(".card1-page2", {
