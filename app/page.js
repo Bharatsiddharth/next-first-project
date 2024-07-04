@@ -3,12 +3,12 @@
 import { Blinker } from 'next/font/google';
 import Nav from './Components/nav';
 import Page1 from './page1';
-import Footer from './footer';
 import Page3 from './page3';
 import Page4 from './page4'
 import Page2 from './page2';
 import Blob from './blob';
 import header from './Components/header';
+import Footer from './Components/footer'
 import { useEffect } from 'react';
 
 

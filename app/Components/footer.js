@@ -1,12 +1,12 @@
 'use client'
 import React from 'react'
-import Header from './Components/header'
+import Header from './header'
 import { useEffect } from 'react';
 // import { useState } from 'react';
 import { Blinker } from 'next/font/google';
-import Owl from './Components/assets/images/owl.webp';
+import Owl from './assets/images/owl.webp';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import { Roboto} from 'next/font/google';
 
@@ -35,10 +35,10 @@ const footer = () => {
         ease: 'power4.out',
         scrollTrigger: {
           trigger: 'footer',
-          start: '-800px top',
-          end: '-500px end',
+          start: '-1000px top',
+          end: '-700px end',
           scrub: true,
-          // markers: true,
+          markers: true,
         },
       }
     );
@@ -94,17 +94,17 @@ const footer = () => {
     </div>
   </div>
 
-  <div className="owl mb-10  md:mb-0">
-    <img className="h-80 w-80 mx-auto" src={Owl.src} alt="owl" />
-    <div className="eyes flex justify-center mt-4">
-      <div id="left-eye" className="eye mr-2">
-        <div className="ball"></div>
+      <div className="owl mb-10 max-[1150px]:hidden  md:mb-0">
+        <img className="h-80 w-80 mx-auto" src={Owl.src} alt="owl" />
+        <div className="eyes flex justify-center mt-4">
+          <div id="left-eye" className="eye mr-2">
+            <div className="ball"></div>
+          </div>
+          <div id="right-eye" className="eye ml-2">
+            <div className="ball"></div>
+          </div>
+        </div>
       </div>
-      <div id="right-eye" className="eye ml-2">
-        <div className="ball"></div>
-      </div>
-    </div>
-  </div>
 
   <div className="right-footer text-center md:text-left">
   <div className={`${roboto.className}`}>

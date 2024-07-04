@@ -214,7 +214,7 @@ html{
 
 .card1-page2:hover .content-page2 {
     opacity: 1;
-    transform: translateY(0);
+    /* transform: translateY(0) !important; */
 }
 
 /* Disable hover effect for screens smaller than 620px */
@@ -792,7 +792,7 @@ video{
   background: linear-gradient(to right, aquamarine, mediumpurple);
   animation: rotate 25s infinite;
   opacity: 0.8;
-  filter: blur(70px);
+  filter: blur(100px);
   z-index: 0;
   
 }
@@ -880,3 +880,22 @@ video{
 
 /* slider  */
 
+/* page2  */
+/* 
+@media only screen and (min-width: 768px) {
+  .content-page2 {
+    transform: rotate(0deg);
+  }
+} */
+
+.content-page2 {
+  /* background-color: #00ff00; */
+  transform: rotate(-5deg) !important;
+}
+
+
+@media  (max-width: 768px) {
+  .content-page2 {
+    transform: rotate(0deg) !important;
+  }
+}

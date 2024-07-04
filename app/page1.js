@@ -25,7 +25,7 @@ const page1 = () => {
 
     gsap.from('h1 .char', {
       // letterSpacing:'2rem',
-      x: 300,
+      x: 150,
       opacity: 0,
       duration: 0.65,
       ease: 'bounce.out',
@@ -70,7 +70,7 @@ const page1 = () => {
               style={{
                 transform: isHovered ? 'scale(0.3)' : 'scale(1)',
                 backgroundColor: isHovered ? '#A374FF' : 'transparent',
-                transition: 'transform 0.3s, background-color 0.3s'
+                 transition: 'transform 0.6s, background-color 0.6s'
               }}
             >
               <div
@@ -97,7 +97,7 @@ const page1 = () => {
                   alt="scroll down"
                   style={{
                     position: 'relative',
-                    top: isHovered ? '0vh' : '-7vh',
+                    top: isHovered ? '-1vh' : '-7vh',
                     transition: 'top 0.5s'
                   }}
                 />
@@ -106,17 +106,17 @@ const page1 = () => {
           </div>
 
 
-          <div class="h-3/4 max-[1000px]:hidden mt-32 w-1/3 max-[620px]:w-full max-[620px]:px-4 max-[620px]:py-20 flex items-center justify-center">
-            <div class="content top-[40%]  left-[18rem]    flex flex-col z-[500] text-white max-[620px]:w-[20rem] w-[60rem] absolute">
-              <h1 class="text-9xl max-[620px]:hidden   text-center max-[620px]:text-5xl leading-8 font-bold">Conversion</h1>
+          <div class="h-3/4 max-[1000px]:hidden mt-32 w-1/3 max-[620px]:w-full max-[620px]:px-4 max-[620px]:py-20 flex items-center justify-center ">
+            <div class="content top-[40%] max-[1000px]:hidden  left-[18vw]  leading-3  flex flex-col z-[500] text-white max-[620px]:w-[20rem] w-[60rem] max-[1200px]:w-[48rem] max-[1100px]:right-[25rem] absolute ">
+              <h1 class="text-[10vw]  max-[1100px]:text-8xl   text-center max-[620px]:text-5xl  font-bold">Conversion</h1>
 
               <div class="flex flex-col items-center py-4 max-[620px]:py-0 md:flex-row md:items-center md:gap-4">
-                <h1 class="through text-5xl md:text-9xl">through</h1>
+                <h1 class="through  max-[1100px]:text-8xl text-[10vw]">through</h1>
                 <button class="m-12  hidden tracking-normal md:inline-block text-sm font-bold px-8 py-4 md:mr-20 text-black bg-yellow-200 rounded-full">
                   Discover what we do
                 </button>
               </div>
-              <h1 class="text-9xl ml-32 max-[620px]:ml-0 text-center max-[620px]:text-5xl leading-8 font-bold">immersion</h1>
+              <h1 class="text-[10vw] ml-32 max-[620px]:ml-0 text-center max-[1100px]:text-8xl max-[620px]:text-5xl leading-8 font-bold">immersion</h1>
               {/* <h1 class="text-9xl bg-red-200 max-[620px]:text-5xl w-[55rem] leading-8 max-[620px]:text-center text-right font-bold">immersion</h1> */}
               <button class="my-6 mx-12  px-8 hidden max-[620px]:block max-[620px]:text-xs py-4 mr-20 text-black bg-yellow-200 rounded-full">
                 Discover what we do
@@ -170,17 +170,17 @@ const page1 = () => {
           </div>
 
 
-          <div class="h-3/4 hidden max-[620px]:block mt-32 max-[620px]:mt-0 w-1/3 max-[620px]:w-full max-[620px]:px-4 max-[620px]:py-0 max-[620px]:pt-20 flex items-center justify-center">
-            <div class="  max-[620px]:mt-32 max-[620px]:ml-10 flex flex-col items-center justify-center font-extrabold text-white max-[620px]:w-[20rem] w-[60rem] absolute">
-              <h1 class="text-9xl  text-center max-[620px]:text-5xl leading-8 font-bold">Conversion</h1>
+          <div class="h-3/4 hidden max-[1000px]:block mt-32 max-[620px]:mt-0 w-1/3 max-[620px]:w-full max-[620px]:px-4 max-[620px]:py-0 max-[620px]:pt-20  items-center justify-center">
+            <div class="  max-[620px]:mt-32 max-[620px]:ml-10 max-[1000px]:ml-10 flex flex-col items-center justify-center font-extrabold text-white max-[620px]:w-[20rem] w-[40rem] max-[1000px]:mt-[19rem] absolute">
+              <h1 class="text-[9vw]   text-center max-[620px]:text-5xl leading-8 font-bold">Conversion</h1>
 
               <div class="flex flex-col items-center py-4 max-[620px]:py-0 md:flex-row md:items-center md:gap-4">
-                <h1 class="text-5xl md:text-9xl">through</h1>
+                <h1 class="text-5xl md:text-[9vw] ">through</h1>
                 <button class="m-12  hidden md:inline-block text-sm font-bold px-8 py-4 md:mr-20 text-black bg-yellow-200 rounded-full">
                   Discover what we do
                 </button>
               </div>
-              <h1 class="text-9xl ml-32 max-[620px]:ml-0 text-center max-[620px]:text-5xl leading-8 font-bold">immersion</h1>
+              <h1 class="text-[9vw]  ml-32 max-[620px]:ml-0 text-center max-[620px]:text-5xl leading-8 font-bold">immersion</h1>
               {/* <h1 class="text-9xl bg-red-200 max-[620px]:text-5xl w-[55rem] leading-8 max-[620px]:text-center text-right font-bold">immersion</h1> */}
               <button class="my-6 mx-12  px-8 hidden max-[620px]:block max-[620px]:text-xs py-4 mr-20 text-black bg-yellow-200 rounded-full">
                 Discover what we do
@@ -189,8 +189,7 @@ const page1 = () => {
             <video class="object-cover h-full w-full rounded-3xl" autoplay loop muted src="https://player.vimeo.com/progressive_redirect/playback/725952347/rendition/1080p/file.mp4?loc=external&signature=57a7c3522f4c7c21f8123a490b67c603be4efaa02c9c70cfde99789ab3ea9a29">
             </video>
 
-            <div class="main-circle bg-red-500 fixed left-[-20rem] top-[25rem] w-full max-w-[620px]:py-14 md:w-1/2 md:pl-[13rem] flex items-center justify-center max-w-[1000px]:flex max-w-[1000px]:flex-col">
-            </div>
+            
           </div>
         </div>
       </section>

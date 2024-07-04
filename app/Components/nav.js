@@ -87,13 +87,13 @@ const Nav = () => {
             <nav className={`nav2 absolute w-full transition-transform duration-500 ease-in-out ${menuOpen ? 'transform translate-y-0' : 'transform -translate-y-full'}`}>
               <div className='flex max-[620px]:flex-col-reverse max-[620px]:items-center justify-between h-screen px-10 bg-white'>
                 <div className='nav2-left mt-96  max-[620px]:mt-5'>
-                  <p className='text-s font-bold text-[#9d6cff] mt-32 max-[620px]:mt-0'>Get in Touch</p>
+                  <p className='text-s font-bold text-[#9d6cff] mt-20 max-[620px]:mt-0'>Get in Touch</p>
                   <p className='text-4xl mt-4'>hello@poppr.be</p>
                   <p className='text-4xl mb-4'>+32 (0)9 335 33 33</p>
                   <p className='text-xl'>Stapelplein 70/303</p>
                   <p className='text-xl'>9000 Ghent</p>
                 </div>
-                <div id='#offering' className='menu-elem mr-52 font-extrabold z-30 max-[620px]:mt-30 max-[620px]:mr-0 mt-32 text-8xl tracking-[10px] font-serif max-[620px]:text-7xl'>
+                <div id='#offering' className='menu-elem mr-52 font-extrabold z-30 max-[620px]:mt-30 max-[620px]:mr-0 mt-20 text-8xl tracking-[10px] font-serif max-[620px]:text-7xl'>
                   <h2 className=''>work
                   <div class=" cross-line"></div></h2>
                   <h2 className=''>solutions</h2>
