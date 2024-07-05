@@ -57,30 +57,30 @@ const page2 = () => {
         const matchMedia = window.matchMedia("(min-width: 620px)");
       
         if (matchMedia.matches) {
-          gsap.to(".card1-page2", {
-            x: -1500,
-            scrollTrigger: {
-              trigger: ".scroller",
-              start: "top bottom",
-              end: "bottom end",
-              scrub: 5,
-            //   markers: true
-            }
-          });
+        //   gsap.to(".card1-page2", {
+        //     x: -1500,
+        //     scrollTrigger: {
+        //       trigger: ".scroller",
+        //       start: "top bottom",
+        //       end: "bottom end",
+        //       scrub: 5,
+        //     //   markers: true
+        //     }
+        //   });
         }
       
         const handleResize = () => {
           if (matchMedia.matches) {
-            gsap.to(".card1-page2", {
-              x: -1000,
-              scrollTrigger: {
-                trigger: ".scroller",
-                start: "top bottom",
-                end: "bottom end",
-                scrub: 5,
-                // markers: true
-              }
-            });
+            // gsap.to(".card1-page2", {
+            //   x: -1000,
+            //   scrollTrigger: {
+            //     trigger: ".scroller",
+            //     start: "top bottom",
+            //     end: "bottom end",
+            //     scrub: 5,
+            //     // markers: true
+            //   }
+            // });
           } else {
             // Kill the animation if the width is below 620px
             ScrollTrigger.getAll().forEach(trigger => trigger.kill());
@@ -138,7 +138,7 @@ const page2 = () => {
         <div className='overflow-hidden'>
             <div className='text-white relative flex justify-center gap-24   py-40 max-[620px]:py-10 max-[620px]:px-4'>
                 <h6 className='text-sm max-[620px]:text-xs  font-bold text-[#a374ff]' >SELECTED WORK</h6>
-                <p className={`text-3xl max-[620px]:text-2xl text-center md:text-left pb-8 ${roboto.className}`}>
+                <p className={`text-3xl max-[620px]:text-xl text-center md:text-left pb-8 ${roboto.className}`}>
                     Enjoy some of our best work <br />
                     in immersive <span className='text-[#a374ff]'>web</span>, <br />
                     <span className='text-[#17f1d1]'>augmented reality</span> and <span className='text-[#ffd074]'>virtual <br /> reality</span> experiences
@@ -147,13 +147,13 @@ const page2 = () => {
 
 
             <div className=''>
-            <div className="scroller  transition-all ease-in-out duration-500  rotate-6  scale-105  max-[620px]:rotate-0 max-[620px]:gap-20 max-[620px]:flex max-[620px]:flex-col max-[620px]:items-center max-[620px]:justify-center    flex gap-10 overflow-x-auto overflow-y-hidden scrollbar-none">
+            <div className="  scroller  transition-all ease-in-out duration-500  rotate-6  scale-105 px-20  max-[620px]:rotate-0 max-[620px]:gap-20 max-[620px]:flex max-[620px]:flex-col max-[620px]:items-center max-[620px]:justify-center    flex gap-10 overflow-x-auto overflow-y-hidden scrollbar-none">
             
             
 
 
             {cards.map((card) => (
-                <div key={card.id} className="card1-page2 mt-5 max-[620px]:flex max-[620px]:flex-col   max-[620px]:w[20rem] max-[620px]:h-[25rem]   h-[33rem] relative">
+                <div key={card.id} className="card1-page2  mt-5 max-[620px]:flex max-[620px]:flex-col   max-[620px]:w[20rem] max-[620px]:h-[25rem]   h-[33rem] relative">
                     <div className='card w-[35rem] max-[620px]:w-[20rem] rounded-2xl   overflow-hidden relative'>
                     <div className="drag-cursor bg-[#a374ff] text-white max-[620px]:hidden h-28 w-28 flex items-center justify-center opacity-0  absolute rounded-full z-10 p-4">
                     <span className="text-center">Drag <br/> or <br /> Click</span>
@@ -166,7 +166,7 @@ const page2 = () => {
                              alt={card.title} />
                     </div>
 
-                    <div className="content-page2 max-[620px]:rotate-0 flex -rotate-6 flex-col mt-10 px-5 max-[620px]:px-0 text-white md:absolute sm:relative top-80  max-[620px]:w-[20rem] mx-auto" >
+                    <div className="content-page2 max-[620px]:rotate-0 flex -rotate-6 flex-col mt-10 px-5 max-[620px]:px-0 text-white md:absolute sm:relative top-72  max-[620px]:w-[20rem] mx-auto" >
                     <h3 className="text-xl sm:text-2xl md:text-3xl">{card.description}</h3>
                     <h1 className="text-lg sm:text-xl md:text-2xl font-bold py-2">{card.title}</h1>
                     <h5 className="text-xs sm:text-sm md:text-base font-semibold">{card.category}</h5>
@@ -180,7 +180,7 @@ const page2 = () => {
 
             </div>
 
-            <div className="py-24 mt-20 max-[620px]:py-6 max-[620px]:px-0 max-[620px]:items-center max-[620px]:justify-center flex px-40 ">
+            <div className="py-24 max-[620px]:mt-20  max-[620px]:py-6 max-[620px]:px-0 max-[620px]:items-center max-[620px]:justify-center flex px-40 ">
             <button className="py-4 px-8 text-dark font-semibold bg-transparent text-white border-[#9d6cff] me-2 mb-2 text-lg rounded-full border max-[620px]:py-2 max-[620px]:px-4">
             Discover more insights
             </button>

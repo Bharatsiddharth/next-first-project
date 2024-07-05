@@ -38,11 +38,14 @@ html{
 }
 /* Apply the animation on hover */
 .navButton:hover {
-  animation: glow 1.5s infinite alternate;
+  animation: glow 0.1s infinite alternate;
 }
 
 /* nav */
 
+nav h1{
+  z-index: 1000 !important;
+}
 
 
 .page4,.page1{

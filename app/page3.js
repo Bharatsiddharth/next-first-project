@@ -41,7 +41,7 @@ const Page3 = () => {
     };
   }, []);
   return (
-    <section className={`page3 relative text-white px-4 md:px-44 py-10 max-[620px]:py-0 ${roboto.className}`}>
+    <section className={`page3 relative text-white px-4 lg:px-44 py-10 max-[620px]:py-0 ${roboto.className}`}>
       <h5 className="text-center text-xs font-bold py-20">FEATURED INSIGHTS</h5>
 
       <div className="grid grid-cols-1 max-[620px]:flex max-[620px]:flex-col max-[620px]:justify-center  md:grid-cols-2 gap-4 gap-x-16 gap-y-36 max-[620px]:gap-y-10">

@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { gsap } from 'gsap';
 import Header from './header';
-import { Blinker } from 'next/font/google';
+// import { Blinker } from 'next/font/google';
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,9 +15,9 @@ const Nav = () => {
         // headings.forEach((heading) => {
         //   const letters = heading.textContent.split('');
         //   heading.innerHTML = letters.map(letter => `<span className="inline-block">${letter}</span>`).join('');
-          
+
         // });
-        
+
         gsap.from('.nav2-left p', {
           y: 200,
           opacity: 0,
@@ -25,12 +25,12 @@ const Nav = () => {
           stagger: 0.05,
           ease: 'power4.out' // Smoother easing function
         });
-        gsap.fromTo('.menu-elem h2', 
+        gsap.fromTo('.menu-elem h2',
           {
             x: 300,
             opacity: 0,
             letterSpacing: 10, // Starting with wide letter spacing
-          }, 
+          },
           {
             x: 0,
             opacity: 1,
@@ -40,9 +40,9 @@ const Nav = () => {
             ease: 'bounce.out'
           }
         );
-        
+
       };
-      
+
       gsap.to('.nav2', {
         y: 0,
         duration: 0.8,
@@ -65,37 +65,36 @@ const Nav = () => {
   return (
     <>
       <Header />
-      <nav className='w-full fixed z-[1000]'>
+      <nav className='w-full fixed z-[900]'>
         <section>
           <div>
-            <nav className='nav1  max-[620px]:border-none border-gray-100 bg-transparent z-20  absolute max-[620px]:bg-transparent  w-full flex justify-between p-5  px-10 max-[620px]:px-4'>
-              <h1 className='font-bold max-[620px]:text-3xl text-4xl text-purple-500'>poppr</h1>
-             
+            <nav className={`nav1 z-[901]  border-b-[0.1px]  ${menuOpen ? 'bg-white transition-colors delay-1000' : 'bg-[#1D1D1F] transition-colors delay-1000'}   max-[620px]:border-none border-transparent  z-20  absolute w-full flex justify-between p-3  px-10 max-[620px]:px-4`}>
+              <h1 className='z-[1000] font-bold max-[620px]:text-3xl text-4xl text-purple-500'>poppr</h1>
+
               <div className=''>
-                {!menuOpen && (
-                  <button className='navButton button py-4 px-8 text-dark font-semibold bg-transparent text-white border-[#9d6cff] me-2 mb-2 text-xl -none rounded-full border -gray-100 -blue-700 -10 -4 -gray-100 :ring-gray-700 -gray-800 -gray-400 -gray-600 :text-white :bg-gray-700 max-[620px]:py-2 max-[620px]:px-4'>
-                    Get in touch
-                  </button>
-                )}
+
+                <button className={`navButton   ${menuOpen ? 'opacity-0 transition delay-1000' : 'opacity-1 transition delay-2000'} button py-4 px-8 text-dark font-semibold bg-transparent text-white border-[#9d6cff] me-2 mb-2 text-sm -none rounded-full border -gray-100 -blue-700 -10 -4 -gray-100 :ring-gray-700 -gray-800 -gray-400 -gray-600 :text-white :bg-gray-700 max-[620px]:py-2 max-[620px]:px-4`}>
+                  Get in touch
+                </button>
+
                 <i
-                  className={`menu  rounded-full text-white max-[620px]:text-1xl bg-[#9d6cff] p-4 text-2xl cursor-pointer ${menuOpen ? 'ri-close-circle-line' : 'ri-menu-line'}`}
+                  className={`menu  rounded-full text-white max-[620px]:text-xl bg-[#9d6cff] p-4 text-2xl cursor-pointer ${menuOpen ? 'ri-close-circle-line' : 'ri-menu-line'}`}
                   onClick={toggleMenu}
                 ></i>
               </div>
             </nav>
 
-            <nav className={`nav2 absolute w-full transition-transform duration-500 ease-in-out ${menuOpen ? 'transform translate-y-0' : 'transform -translate-y-full'}`}>
-              <div className='flex max-[620px]:flex-col-reverse max-[620px]:items-center justify-between h-screen px-10 bg-white'>
-                <div className='nav2-left mt-96  max-[620px]:mt-5'>
-                  <p className='text-s font-bold text-[#9d6cff] mt-20 max-[620px]:mt-0'>Get in Touch</p>
+            <nav className={`nav2 absolute z-[99]   w-full transition-transform duration-1000 ease-in-out ${menuOpen ? 'transform translate-y-0' : 'transform -translate-y-full'}`}>
+              <div className='flex flex-col-reverse lg:flex-row items-start h-screen lg:justify-between  px-10 bg-white'>
+                <div className='nav2-left mt-5 lg:mt-96'>
+                  <p className='text-s font-bold text-[#9d6cff] mt-0 lg:mt-20'>Get in Touch</p>
                   <p className='text-4xl mt-4'>hello@poppr.be</p>
                   <p className='text-4xl mb-4'>+32 (0)9 335 33 33</p>
                   <p className='text-xl'>Stapelplein 70/303</p>
                   <p className='text-xl'>9000 Ghent</p>
                 </div>
-                <div id='#offering' className='menu-elem mr-52 font-extrabold z-30 max-[620px]:mt-30 max-[620px]:mr-0 mt-20 text-8xl tracking-[10px] font-serif max-[620px]:text-7xl'>
-                  <h2 className=''>work
-                  <div class=" cross-line"></div></h2>
+                <div id='offering' className='menu-elem  z-30 mt- lg:mt-20 mr-0 lg:mr-36 text-6xl lg:text-8xl tracking-[10px] font-serif'>
+                  <h2 className=''>work</h2>
                   <h2 className=''>solutions</h2>
                   <h2 className=''>about us</h2>
                   <h2 className=''>insights</h2>
