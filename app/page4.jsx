@@ -41,7 +41,7 @@ const page4 = () => {
       start: '-300px center',
       end: '100px center',
       scrub: true,
-      markers: true,
+      // markers: true,
       animation: tl,
       scrub:3
     });
