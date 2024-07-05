@@ -161,7 +161,7 @@ const page1 = () => {
 
 
           <div class="h-3/4 hidden overflow-y-hidden max-[1000px]:block  mt-32 max-[620px]:mt-0 w-1/2 max-[620px]:w-full max-[620px]:px-4 max-[620px]:py-0 max-[620px]:pt-20  items-center justify-center">
-            <div class="  max-[620px]:mt-32 max-[620px]:ml-10  max-[1000px]:mr-[10rem]    bg-red-300 md:left-16 flex flex-col items-center justify-center font-extrabold text-white max-[770px]:w-[18rem]  w-[40rem] max-[1000px]:mt-[8rem] absolute">
+            <div class="  max-[620px]:mt-32 max-[620px]:ml-10  max-[1000px]:mr-[10rem]    md:left-16 flex flex-col items-center justify-center font-extrabold text-white max-[770px]:w-[18rem]  w-[40rem] max-[1000px]:mt-[8rem] absolute">
               <h1 class="text-[9vw]    text-center max-[620px]:text-5xl leading-3 font-bold">Conversion</h1>
 
               <div class="flex flex-col items-center pt-4 max-[620px]:py-0 md:flex-row md:items-center md:gap-4">
