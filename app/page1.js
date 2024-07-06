@@ -111,8 +111,10 @@ const page1 = () => {
               <h1 class="text-[10vw] max-[1100px]:text-8xl text-center max-[620px]:text-5xl font-bold">Conversion</h1>
               <div class="flex flex-col h-54 max-[1100px]:h-14 items-center xl:py-2 max-[620px]:py-0 md:flex-row md:items-center md:gap-10">
                 <h1 class="through max-[1100px]:text-8xl text-[10vw]">through</h1>
-                <button class="m-12 hidden tracking-normal md:inline-block text-sm font-bold px-8 py-4 md:mr-20 text-black bg-yellow-200 rounded-full max-[620px]:text-xs max-[620px]:px-4 max-[620px]:py-2">
-                  Discover what we do
+                <button className="main-btn m-10  hidden md:inline-block text-sm font-bold px-8 py-4 md:mr-10 text-black bg-yellow-200 rounded-full group">
+                  <span className="transition w-[8rem] inline-block opacity-100 group-hover:opacity-0 duration-700 ease-in-out transform group-hover:-translate-y-4">Discover what we do</span>
+                  <br />
+                  <span className="absolute -ml-14 transition opacity-0 group-hover:opacity-100 duration-700 ease-in-out transform group-hover:-translate-y-5">Discover what we do</span>
                 </button>
               </div>
               <h1 class="text-[10vw] ml-32 pt-3 max-[620px]:ml-0 text-center max-[1100px]:text-8xl max-[620px]:text-5xl leading-8 font-bold">immersion</h1>

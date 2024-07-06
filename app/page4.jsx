@@ -20,22 +20,22 @@ const page4 = () => {
       types: 'lines, words, chars',
       tagName: 'pan',
     });
-  
+
     const chars = typeSplit.chars;
-  
+
     const tl = gsap.timeline({
       onComplete: () => {
         typeSplit.revert();
       },
     });
-  
+
     tl.staggerFrom(chars, 0.55, {
       opacity: 0,
       y: 100,
       stagger: { from: 'center', amount: 0.22 },
       ease: 'back.out(4)',
     });
-  
+
     ScrollTrigger.create({
       trigger: '.h1-page4',
       start: '-300px center',
@@ -43,9 +43,9 @@ const page4 = () => {
       scrub: true,
       // markers: true,
       animation: tl,
-      scrub:3
+      scrub: 3
     });
-  
+
     return () => {
       ScrollTrigger.getAll().forEach(trigger => trigger.kill());
       typeSplit.revert();
@@ -60,13 +60,15 @@ const page4 = () => {
           <h1 className='h1-page4 text-center text-5xl md:text-9xl '>let's make</h1>
           <div className='flex flex-col  md:flex-row items-center justify-center gap-2 md:gap-8'>
             <h1 className='text-5xl md:text-9xl '>great work </h1>
-            <button className="m-6 hidden md:inline-block text-sm font-bold px-8 py-4 md:mr-10 text-black bg-yellow-200 rounded-full">
-              Get in touch
+            <button className="main-btn m-6  hidden md:inline-block text-sm font-bold px-8 py-4 md:mr-10 text-black bg-yellow-200 rounded-full group">
+              <span className="transition w-[8rem] inline-block opacity-100 group-hover:opacity-0 duration-700 ease-in-out transform group-hover:-translate-y-4">Get in touch</span>
+              <br />
+              <span className="absolute -ml-10 transition opacity-0 group-hover:opacity-100 duration-700 ease-in-out transform group-hover:-translate-y-5">Get in touch</span>
             </button>
           </div>
           <h1 className='text-center text-5xl md:text-9xl'>together</h1>
           <button className="m-6 inline-block md:hidden text-xs md:text-sm font-bold px-8 py-4 mr-10 text-black bg-yellow-200 rounded-full">
-            Get in touch
+            <span>Get in touch</span>
           </button>
         </div>
       </section>

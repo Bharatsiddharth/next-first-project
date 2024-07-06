@@ -127,9 +127,11 @@ const Page3 = () => {
       </div>
 
       <div className="py-24 flex items-center justify-center">
-        <button className="py-4 px-8 text-dark font-semibold bg-transparent text-white border-[#9d6cff] me-2 mb-2 text-lg rounded-full border max-[620px]:py-2 max-[620px]:px-4">
-          Discover more insights
-        </button>
+      <button className="main-btn m-6  hidden md:inline-block text-sm font-bold px-8 py-4 md:mr-10 border-2 border-[#9d6cff] bg-transparent text-white rounded-full group">
+              <span className="transition w-[12rem] inline-block opacity-100 group-hover:opacity-0 duration-700 ease-in-out transform group-hover:-translate-y-4">Discover more insights</span>
+              <br />
+              <span className="absolute w-[12rem] -ml-24 transition opacity-0 group-hover:opacity-100 duration-700 ease-in-out transform group-hover:-translate-y-5">Discover more insights</span>
+            </button>
       </div>
      
     </section>
