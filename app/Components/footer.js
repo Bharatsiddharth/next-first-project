@@ -130,37 +130,35 @@ const footer = () => {
       </div>
 
 
-      <div className="bottomfooter flex flex-col max-[620px]:flex-col-reverse max-[1000px]:flex-col-reverse lg:flex-row items-center px-4 md:px-10  py-8 border-t-2 border-gray-300 mx-4 md:mx-10 gap-5">
-        <div className="left w-full md:w-1/2  mb-4 md:mb-0">
-          <div className="flex flex-col sm:flex-row text-xs font-bold justify-between items-center px-2 md:px-0 gap-2 sm:gap-0">
-            <h4>PRIVACY POLICY</h4>
-            <h4>DISCLAIMER</h4>
-            <h4>TERMS AND CONDITIONS</h4>
-            <h4>BE081 0005 745</h4>
-          </div>
-
-        </div>
-
-        <div className="right w-full md:w-1/2 ">
-          <div className="flex flex-col md:flex-row text-sm font-bold justify-between items-center font-mono px-2 md:px-0">
-            <div className="flex flex-col md:flex-row items-center gap-4 md:gap-10 mb-4 md:mb-0 px-4 md:px-20">
-              <h4 className="mb-2 md:mb-0">SEE WHAT WE'RE UP TO</h4>
-              <div className="icons text-xl flex gap-4 md:gap-5 text-white">
-                <i class="ri-facebook-circle-fill"></i>
-                <i class="ri-linkedin-box-fill"></i>
-                <i class="ri-instagram-line"></i>
-                <i class="ri-youtube-fill"></i>
-              </div>
-            </div>
-
-
-            <div className="flex  gap-4 md:gap-5">
-              <h4 className='text-black hover:text-white transition-all'>NEDERLANDS</h4>
-              <h4>ENGLISH</h4>
-            </div>
-          </div>
+      <div className="bottomfooter flex flex-col lg:flex-row items-center px-4 md:px-10 py-8 border-t-2 border-gray-300 mx-4 md:mx-10 gap-5">
+      <div className="left w-full lg-flex-col   lg:w-1/2 mb-4 md:mb-">
+        <div className="flex flex-col sm:flex-row text-xs pt-2 font-bold justify-between items-center px-2 md:px-0 gap-2 sm:gap-0">
+          <h4>PRIVACY POLICY</h4>
+          <h4>DISCLAIMER</h4>
+          <h4>TERMS AND CONDITIONS</h4>
+          <h4>BE081 0005 745</h4>
         </div>
       </div>
+
+  <div className="right w-full md:w-1/2">
+    <div className="flex flex-col lg:flex-row   text-sm font-bold justify-between items-center font-mono px-2 md:px-0">
+      <div className="flex flex-col md:flex-row items-center gap-4   mb-4 md:mb-0 px-4 ">
+        <h4 className="mb-2 md:mb-0 w-40">SEE WHAT WE'RE UP TO</h4>
+        <div className="icons text-xl flex gap-4 md:gap-5 text-white">
+          <i className="ri-facebook-circle-fill"></i>
+          <i className="ri-linkedin-box-fill"></i>
+          <i className="ri-instagram-line"></i>
+          <i className="ri-youtube-fill"></i>
+        </div>
+      </div>
+      <div className="flex gap-4 md:gap-5">
+        <h4 className="text-black hover:text-white transition-all">NEDERLANDS</h4>
+        <h4>ENGLISH</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
     </footer>

@@ -13,22 +13,24 @@
         const animateLetters = () => {
 
           gsap.from('.nav2-left p', {
+            delay:0.5,
             y: 200,
             opacity: 0,
             duration: 1,
             stagger: 0.05,
-            ease: 'power4.out' // Smoother easing function
+            ease: 'power4.out'
           });
           gsap.fromTo('.menu-elem h2',
             {
+              delay: 0.5,
               x: 300,
               opacity: 0,
-              letterSpacing: 10, // Starting with wide letter spacing
+              letterSpacing: 10,
             },
             {
               x: 0,
               opacity: 1,
-              letterSpacing: 0, // Ending with zero letter spacing
+              letterSpacing: 0,
               duration: 1,
               stagger: 0.05,
               ease: 'bounce.out'
@@ -59,10 +61,10 @@
     return (
       <>
         <Header />
-        <nav className='w-full fixed z-[900]'>
+        <nav className='w-full fixed  z-[900]'>
           <section>
             <div>
-              <nav className={`nav1 z-[901]  border-b-[0.1px]  ${menuOpen ? 'bg-white transition-colors delay-1000' : 'bg-[#1D1D1F] transition-colors delay-1000'}   max-[620px]:border-none border-transparent  z-20  absolute w-full flex justify-between p-3  px-10 max-[620px]:px-4`}>
+              <nav className={`nav1 z-[901]    ${menuOpen ? 'bg-white transition-colors delay-1000' : 'bg-[#1D1D1F] transition-colors delay-1000'}   max-[620px]:border-none border-transparent  z-20  absolute w-full flex justify-between p-3  px-10 max-[620px]:px-4`}>
                 <h1 className='z-[1000] font-bold max-[620px]:text-3xl text-4xl text-purple-500'>poppr</h1>
 
                 <div className=''>
@@ -84,7 +86,7 @@
                 </div>
               </nav>
 
-              <nav className={`nav2 absolute z-[99]   w-full transition-transform duration-1000 ease-in-out ${menuOpen ? 'transform translate-y-0' : 'transform -translate-y-full'}`}>
+              <nav className={`nav2 absolute z-[99]    w-full transition-transform duration-1000 ease-in-out ${menuOpen ? 'transform translate-y-0' : 'transform -translate-y-full'}`}>
                 <div className='flex flex-col-reverse lg:flex-row items-start h-screen lg:justify-between  px-10 bg-white'>
                   <div className='nav2-left mt-5 lg:mt-96'>
                     <p className='text-s font-bold text-[#9d6cff] mt-0 lg:mt-20'>Get in Touch</p>
@@ -102,8 +104,12 @@
                     <h2 className=''>contact</h2>
                   </div>
                 </div>
+                <div className={`w-full z-[1000] ${menuOpen ? ' h-[70vh]' : ' h-[0] duration-1000'} transition-all duration-1000 rounded-b-full bg-white`}></div>
+
               </nav>
+             
             </div>
+            
           </section>
         </nav>
       </>

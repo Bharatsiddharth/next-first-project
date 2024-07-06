@@ -109,7 +109,7 @@ const page1 = () => {
           <div class="h-3/4 max-[1000px]:hidden mt-32 w-1/3 max-[620px]:w-full max-[620px]:px-4 max-[620px]:py-20 flex items-center justify-center overflow-hidden p-20">
             <div class="content top-[40%] max-[1000px]:hidden left-[18vw] leading-10 flex flex-col z-[500] text-white max-[620px]:w-[20rem] w-[60rem] max-[1200px]:w-[48rem] max-[1100px]:right-[25rem] absolute">
               <h1 class="text-[10vw] max-[1100px]:text-8xl text-center max-[620px]:text-5xl font-bold">Conversion</h1>
-              <div class="flex flex-col h-54 max-[1100px]:h-14 items-center xl:py-2 max-[620px]:py-0 md:flex-row md:items-center md:gap-10">
+              <div class="flex flex-col h-54 max-[1100px]:h-14 mt-5 items-center xl:py-2 max-[620px]:py-0 md:flex-row md:items-center md:gap-10">
                 <h1 class="through max-[1100px]:text-8xl text-[10vw]">through</h1>
                 <button className="main-btn m-10 overflow-hidden  hidden md:inline-block text-sm font-bold px-8 py-4 md:mr-10 text-black bg-yellow-200 rounded-full group">
                   <span className="transition z-50 w-[8rem] inline-block opacity-100 group-hover:opacity-0 duration-700 ease-in-out transform group-hover:-translate-y-4">Discover what we do</span>
@@ -170,7 +170,7 @@ const page1 = () => {
 
 
           <div class="h-3/4 hidden overflow-y-hidden max-[1000px]:block  mt-32 max-[620px]:mt-0 w-1/2 max-[620px]:w-full max-[620px]:px-4 max-[620px]:py-0 max-[620px]:pt-20  items-center justify-center">
-            <div class="  max-[620px]:mt-32 max-[620px]:ml-10  max-[1000px]:mr-[10rem]    md:left-16 flex flex-col items-center justify-center font-extrabold text-white max-[770px]:w-[18rem]  w-[40rem] max-[1000px]:mt-[8rem] absolute">
+            <div class="  max-[620px]:mt-32 max-[770px]:ml-[20vw] max-[768px]:ml-[2vw] max-[620px]:ml-[18vw]  max-[520px]:ml-[12vw]  max-[1000px]:mr-[10rem]    md:left-16 flex flex-col items-center justify-center font-extrabold text-white max-[770px]:w-[18rem]  w-[40rem] max-[1000px]:mt-[8rem] absolute">
               <h1 class="text-[9vw]    text-center max-[620px]:text-5xl leading-3 font-bold">Conversion</h1>
 
               <div class="flex flex-col items-center pt-4 max-[620px]:py-0 md:flex-row md:items-center md:gap-4">
@@ -182,12 +182,12 @@ const page1 = () => {
 
               <h1 class="text-[9vw]  ml-32 max-[620px]:ml-0 max-[770px]:mr-32 max-[620px]:mr-1 max-[620px]:text-5xl leading-10 font-bold">immersion</h1>
               {/* <h1 class="text-9xl bg-red-200 max-[620px]:text-5xl w-[55rem] leading-8 max-[620px]:text-center text-right font-bold">immersion</h1> */}
-              <button class="my-6 mx-12 px-8 py-4 mr-20 text-black bg-yellow-200 rounded-full hidden max-[770px]:block max-[770px]:mx-4 max-[620px]:mx-2 max-[620px]:text-xs max-[620px]:px-4 max-[620px]:py-2">
+              <button class="my-6 mx-12 px-8 py-4 mr-20 text-black bg-yellow-200 rounded-full hidden max-[767px]:block max-[770px]:mx-4 max-[620px]:mx-2 max-[620px]:text-xs max-[620px]:px-4 max-[620px]:py-2">
                 Discover what we do
               </button>
 
             </div>
-            <video class="object-cover h-full w-full  rounded-3xl" autoplay loop muted src="https://player.vimeo.com/progressive_redirect/playback/725952347/rendition/1080p/file.mp4?loc=external&signature=57a7c3522f4c7c21f8123a490b67c603be4efaa02c9c70cfde99789ab3ea9a29">
+            <video class="object-cover h-full max-[1000px]:h-3/5 max-[620px]:h-full  w-full  rounded-3xl" autoplay loop muted src="https://player.vimeo.com/progressive_redirect/playback/725952347/rendition/1080p/file.mp4?loc=external&signature=57a7c3522f4c7c21f8123a490b67c603be4efaa02c9c70cfde99789ab3ea9a29">
             </video>
 
 

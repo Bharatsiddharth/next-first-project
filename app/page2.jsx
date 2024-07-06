@@ -57,30 +57,30 @@ const page2 = () => {
         const matchMedia = window.matchMedia("(min-width: 620px)");
       
         if (matchMedia.matches) {
-        //   gsap.to(".card1-page2", {
-        //     x: -1500,
-        //     scrollTrigger: {
-        //       trigger: ".scroller",
-        //       start: "top bottom",
-        //       end: "bottom end",
-        //       scrub: 5,
-        //     //   markers: true
-        //     }
-        //   });
+          gsap.to(".card1-page2", {
+            x: -1800,
+            scrollTrigger: {
+              trigger: ".scroller",
+              start: "top bottom",
+              end: "bottom end",
+              scrub: 5,
+            //   markers: true
+            }
+          });
         }
       
         const handleResize = () => {
           if (matchMedia.matches) {
-            // gsap.to(".card1-page2", {
-            //   x: -1000,
-            //   scrollTrigger: {
-            //     trigger: ".scroller",
-            //     start: "top bottom",
-            //     end: "bottom end",
-            //     scrub: 5,
-            //     // markers: true
-            //   }
-            // });
+            gsap.to(".card1-page2", {
+              x: -1000,
+              scrollTrigger: {
+                trigger: ".scroller",
+                start: "top bottom",
+                end: "bottom end",
+                scrub: 5,
+                // markers: true
+              }
+            });
           } else {
             // Kill the animation if the width is below 620px
             ScrollTrigger.getAll().forEach(trigger => trigger.kill());
@@ -147,13 +147,13 @@ const page2 = () => {
 
 
             <div className=''>
-            <div className="  scroller  transition-all ease-in-out duration-500  rotate-6  scale-105 px-20  max-[620px]:rotate-0 max-[620px]:gap-20 max-[620px]:flex max-[620px]:flex-col max-[620px]:items-center max-[620px]:justify-center    flex gap-10 overflow-x-auto overflow-y-hidden scrollbar-none">
+            <div className="  scroller w-[]   transition-all ease-in-out duration-500  rotate-6  scale-105 pl-[80rem] max-[620px]:pl-0  max-[620px]:rotate-0 max-[620px]:gap-20 max-[620px]:flex max-[620px]:flex-col max-[620px]:items-center max-[620px]:justify-center    flex gap-10 overflow-x-auto overflow-y-hidden scrollbar-none">
             
             
 
 
             {cards.map((card) => (
-                <div key={card.id} className="card1-page2  mt-5 max-[620px]:flex max-[620px]:flex-col   max-[620px]:w[20rem] max-[620px]:h-[25rem]   h-[33rem] relative">
+                <div key={card.id} className="card1-page2   mt-5 max-[620px]:flex max-[620px]:flex-col   max-[620px]:w[20rem] max-[620px]:h-[25rem]   h-[33rem] relative">
                     <div className='card w-[35rem] max-[620px]:w-[20rem] rounded-2xl   overflow-hidden relative'>
                     <div className="drag-cursor bg-[#a374ff] text-white max-[620px]:hidden h-28 w-28 flex items-center justify-center opacity-0  absolute rounded-full z-10 p-4">
                     <span className="text-center">Drag <br/> or <br /> Click</span>
