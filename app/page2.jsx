@@ -181,7 +181,7 @@ const page2 = () => {
             </div>
 
             <div className="py-24 max-[620px]:mt-20  max-[620px]:py-6 max-[620px]:px-0 max-[620px]:items-center max-[620px]:justify-center flex px-40 ">
-            <button className="main-btn m-6  hidden md:inline-block text-sm font-bold px-8 py-4 md:mr-10 border-2 border-[#9d6cff] bg-transparent text-white rounded-full group">
+            <button className="main-btn m-6   md:inline-block text-sm font-bold px-8 py-4 md:mr-10 border-2 border-[#9d6cff] bg-transparent text-white rounded-full group">
               <span className="transition w-[12rem] inline-block opacity-100 group-hover:opacity-0 duration-700 ease-in-out transform group-hover:-translate-y-4">Discover more of our work</span>
               <br />
               <span className="absolute w-[12rem] -ml-24 transition opacity-0 group-hover:opacity-100 duration-700 ease-in-out transform group-hover:-translate-y-5">Discover more of our work</span>
