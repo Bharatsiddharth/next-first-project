@@ -73,7 +73,7 @@ const Nav = () => {
 
               <div className=''>
 
-              <button className="main-btn   md:inline-block text-sm font-bold px-8 py-4 md:mr-5  bg-transparent text-white border-2 border-[#9d6cff] rounded-full group">
+              <button className={`  ${menuOpen ? 'opacity-0 transition delay-1000 duration-500' : 'opacity-1 transition delay-1000 duration-500'}  main-btn    md:inline-block text-sm font-bold px-8 py-4 md:mr-5  bg-transparent text-white border-2 border-[#9d6cff] rounded-full group`}>
               <span className="transition  inline-block opacity-100 group-hover:opacity-0 duration-700 ease-in-out transform group-hover:-translate-y-4">Get in touch</span>
               <br />
               <span className="absolute -ml-10 transition opacity-0 group-hover:opacity-100 duration-700 ease-in-out transform group-hover:-translate-y-5">Get in touch</span>
