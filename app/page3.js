@@ -127,11 +127,18 @@ const Page3 = () => {
       </div>
 
       <div className="py-24 flex items-center justify-center">
-      <button className="main-btn m-6  md:inline-block text-sm font-bold px-8 py-4 md:mr-10 border-2 border-[#9d6cff] bg-transparent text-white rounded-full group">
-              <span className="transition w-[12rem] inline-block opacity-100 group-hover:opacity-0 duration-700 ease-in-out transform group-hover:-translate-y-4">Discover more insights</span>
+      <button className="main-btn m-6 bg-[#1D1D1F]  md:inline-block text-sm font-bold px-8 py-4 md:mr-10 border-2 border-[#9d6cff] bg-transparent text-white rounded-full group">
+              <span className="transition z-50 w-[12rem] inline-block opacity-100 group-hover:opacity-0 duration-700 ease-in-out transform group-hover:-translate-y-4">Discover more insights</span>
               <br />
-              <span className="absolute w-[12rem] -ml-24 transition opacity-0 group-hover:opacity-100 duration-700 ease-in-out transform group-hover:-translate-y-5">Discover more insights</span>
-            </button>
+              <span className="absolute z-50 w-[12rem] -ml-24 transition opacity-0 group-hover:opacity-100 duration-700 ease-in-out transform group-hover:-translate-y-5">Discover more insights</span>
+
+
+              
+                 
+                  
+                
+
+      </button>
       </div>
      
     </section>

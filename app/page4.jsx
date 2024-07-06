@@ -60,15 +60,25 @@ const page4 = () => {
           <h1 className='h1-page4 text-center text-5xl md:text-9xl '>let's make</h1>
           <div className='flex flex-col  md:flex-row items-center justify-center gap-2 md:gap-8'>
             <h1 className='text-5xl md:text-9xl '>great work </h1>
-            <button className="main-btn m-6  hidden md:inline-block text-sm font-bold px-8 py-4 md:mr-10 text-black bg-yellow-200 rounded-full group">
-              <span className="transition w-[8rem] inline-block opacity-100 group-hover:opacity-0 duration-700 ease-in-out transform group-hover:-translate-y-4">Get in touch</span>
+            <button className="main-btn overflow-hidden m-6  hidden md:inline-block text-sm font-bold px-8 py-4 md:mr-10 text-black bg-yellow-200 rounded-full group">
+              <span className="transition z-50 w-[8rem] inline-block opacity-100 group-hover:opacity-0 duration-700 ease-in-out transform group-hover:-translate-y-4">Get in touch</span>
               <br />
-              <span className="absolute -ml-10 transition opacity-0 group-hover:opacity-100 duration-700 ease-in-out transform group-hover:-translate-y-5">Get in touch</span>
+              <span className="absolute z-50 -ml-10 transition opacity-0 group-hover:opacity-100 duration-700 ease-in-out transform group-hover:-translate-y-5">Get in touch</span>
+
+              <div className='flex items-center justify-center mt-28 ml-14 absolute'>
+                  <div id="an-cir1" class="z-1 h-44 transition ease-in duration-500 ml-2 rounded-full absolute w-44 bg-[#9d6cff] anim-circle"></div>
+                  <div id="an-cir2" class="h-36 ml-2 transition ease-in duration-500 rounded-full absolute w-36 bg-sky-400 anim-cirlce"></div>
+                  <div id="an-cir3" class="z-2 h-24 transition ease-in duration-500 ml-2 rounded-full absolute w-24 bg-yellow-200  anim-cirlce"></div>
+              </div>
+
+
             </button>
           </div>
           <h1 className='text-center text-5xl md:text-9xl'>together</h1>
           <button className="m-6 inline-block md:hidden text-xs md:text-sm font-bold px-8 py-4 mr-10 text-black bg-yellow-200 rounded-full">
             <span>Get in touch</span>
+
+            
           </button>
         </div>
       </section>

@@ -38,6 +38,46 @@ html{
 }
 /* Apply the animation on hover */
 
+/* page1 btn  */
+
+.main-btn:hover #an-cir1 {
+  transform: scale(2.5);
+}
+
+.main-btn:hover #an-cir2 {
+  transform: scale(3);
+}
+
+.main-btn:hover #an-cir3 {
+  transform: scale(3.5);
+}
+
+.main-btn.anim-circle {
+  opacity: 0;
+}
+
+.main-btn:hover.anim-circle {
+  opacity: 1;
+}
+
+/* .page4  */
+
+.main-btn:hover #an-circle1 {
+  transform: translateX(200%);
+  scale: 1.03;
+}
+
+.main-btn:hover #an-circle2 {
+  transform: translateX(-100%);
+  scale: 1.03;
+}
+
+.main-btn:hover #an-circle3 {
+  transform: translateX(-200%);
+  scale: 1.03;
+}
+
+
 
 /* nav */
 
