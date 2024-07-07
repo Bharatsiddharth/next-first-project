@@ -64,16 +64,20 @@
         <nav className='w-full fixed  z-[900]'>
           <section>
             <div>
-              <nav className={`nav1 z-[901]    ${menuOpen ? 'bg-white transition-colors delay-1000' : 'bg-[#1D1D1F] transition-colors delay-1000'}   max-[620px]:border-none border-transparent  z-20  absolute w-full flex justify-between p-3  px-10 max-[620px]:px-4`}>
+              <nav className={`nav1 z-[901]    ${menuOpen ? 'bg-white transition-colors delay-1000 duration-500' : 'bg-[#1D1D1F] transition-colors delay-1000 duration-500'}   max-[620px]:border-none border-transparent  z-20  absolute w-full flex justify-between p-3  px-10 max-[620px]:px-4`}>
                 <h1 className='z-[1000] font-bold max-[620px]:text-3xl text-4xl text-purple-500'>poppr</h1>
 
                 <div className=''>
 
-                <button className={`  ${menuOpen ? 'opacity-0 transition delay-1000 duration-500' : 'opacity-1 transition delay-1000 duration-500'}  main-btn    md:inline-block text-sm font-bold px-8 py-4 md:mr-5  bg-transparent text-white border-2 border-[#9d6cff] rounded-full group`}>
+                <button className={`  ${menuOpen ? 'opacity-0 transition delay-1000 duration-500' : 'opacity-1 transition delay-1000 duration-500'}  main-btn overflow-hidden   md:inline-block text-sm font-bold px-8 py-4 md:mr-5  bg-transparent text-white border-2 border-[#9d6cff] rounded-full group`}>
+                <span className='span -mt-[.2]'></span>
+                {/* <span className='span '></span> */}
+                <span className='span top-[3.2rem]'></span>
+                <span className='span'></span>
                 <span className="transition  inline-block opacity-100 group-hover:opacity-0 duration-700 ease-in-out transform group-hover:-translate-y-4">Get in touch</span>
                 <br />
                 <span className="absolute -ml-10 transition opacity-0 group-hover:opacity-100 duration-700 ease-in-out transform group-hover:-translate-y-5">Get in touch</span>
-              </button>
+                </button>
 
                   <i
                     className={`menu  rounded-full text-white max-[620px]:text-xl bg-[#9d6cff] p-4 text-2xl cursor-pointer ${menuOpen ? 'ri-close-circle-line' : 'ri-menu-line'}`}

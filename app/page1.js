@@ -55,7 +55,7 @@ const page1 = () => {
   return (
     <>
 
-      <section className='overflow-x-hidden'>
+      <section className=''>
 
 
         <div class={`h-screen bg-[#1D1D1F] w-full flex items-center justify-center ${blinker.className}`}>
@@ -106,7 +106,7 @@ const page1 = () => {
           </div>
 
 
-          <div class="h-3/4 max-[1000px]:hidden mt-32 w-1/3 max-[620px]:w-full max-[620px]:px-4 max-[620px]:py-20 flex items-center justify-center overflow-hidden p-20">
+          <div class="h-3/4 max-[1000px]:hidden  mt-32 w-1/3 max-[620px]:w-full max-[620px]:px-4 max-[620px]:py-20 flex items-center justify-center   scrollbar-hide p-20">
             <div class="content top-[40%] max-[1000px]:hidden left-[18vw] leading-10 flex flex-col z-[500] text-white max-[620px]:w-[20rem] w-[60rem] max-[1200px]:w-[48rem] max-[1100px]:right-[25rem] absolute">
               <h1 class="text-[10vw] max-[1100px]:text-8xl text-center max-[620px]:text-5xl font-bold">Conversion</h1>
               <div class="flex flex-col h-54 max-[1100px]:h-14 mt-5 items-center xl:py-2 max-[620px]:py-0 md:flex-row md:items-center md:gap-10">
@@ -124,7 +124,7 @@ const page1 = () => {
 
                 </button>
               </div>
-              <h1 class="text-[10vw] ml-32 pt-3 max-[620px]:ml-0 text-center max-[1100px]:text-8xl max-[620px]:text-5xl leading-8 font-bold">immersion</h1>
+              <h1 class="text-[10vw] ml-32 mt-2 pt-3 max-[620px]:ml-0 text-center max-[1100px]:text-8xl max-[620px]:text-5xl leading-8 font-bold">immersion</h1>
               <button class="my-6 mx-12 px-8 hidden max-[620px]:block max-[620px]:text-xs py-4 text-black bg-yellow-200 rounded-full">
                 Discover what we do
               </button>
@@ -187,7 +187,7 @@ const page1 = () => {
               </button>
 
             </div>
-            <video class="object-cover h-full max-[1000px]:h-3/5 max-[620px]:h-full  w-full  rounded-3xl" autoplay loop muted src="https://player.vimeo.com/progressive_redirect/playback/725952347/rendition/1080p/file.mp4?loc=external&signature=57a7c3522f4c7c21f8123a490b67c603be4efaa02c9c70cfde99789ab3ea9a29">
+            <video class="object-cover h-full max-[1000px]:h-3/4 max-[770px]:h-3/4 max-[770px]:w-full  max-[620px]:h-full  w-full  rounded-3xl" autoplay loop muted src="https://player.vimeo.com/progressive_redirect/playback/725952347/rendition/1080p/file.mp4?loc=external&signature=57a7c3522f4c7c21f8123a490b67c603be4efaa02c9c70cfde99789ab3ea9a29">
             </video>
 
 

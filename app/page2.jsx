@@ -49,6 +49,8 @@ const page2 = () => {
             description: 'Bringing live-guided immersive virtual tours to a global audience',
             category: 'WEB . 360 PHOTOGRAPHY'
         },
+       
+        
         
     ];
     
@@ -157,7 +159,7 @@ const page2 = () => {
             
 
             {cards.map((card) => (
-                <div key={card.id} className="card1-page2   mt-5 max-[620px]:flex max-[620px]:flex-col   max-[620px]:w[20rem] max-[620px]:h-[25rem]   h-[33rem] relative">
+                <div key={card.id} className="card1-page2    mt-5 max-[620px]:flex max-[620px]:flex-col   max-[620px]:w[20rem] max-[620px]:h-[25rem]   h-[33rem] relative">
                     <div className='card w-[35rem] max-[620px]:w-[20rem] rounded-2xl   overflow-hidden relative'>
                     <div className="drag-cursor bg-[#a374ff] text-white max-[620px]:hidden h-28 w-28 flex items-center justify-center opacity-0  absolute rounded-full z-10 p-4">
                     <span className="text-center">Drag <br/> or <br /> Click</span>
@@ -184,8 +186,12 @@ const page2 = () => {
 
             </div>
 
-            <div className="py-24 max-[620px]:mt-20  max-[620px]:py-6 max-[620px]:px-0 max-[620px]:items-center max-[620px]:justify-center flex px-40 ">
-            <button className="main-btn m-6   md:inline-block text-sm font-bold px-8 py-4 md:mr-10 border-2 border-[#9d6cff] bg-transparent text-white rounded-full group">
+            <div className=" py-24  z-[1000] max-[620px]:mt-20  max-[620px]:py-6 max-[620px]:px-0 max-[620px]:items-center max-[620px]:justify-center flex px-40 ">
+            <button className=" main-btn m-6  overflow-hidden   md:inline-block text-sm font-bold px-8 py-4 md:mr-10 border-2 border-[#9d6cff] bg-transparent text-white rounded-full group">
+            <span className='span -mt-[.2]'></span>
+            {/* <span className='span '></span> */}
+            <span className='span top-[3.2rem]'></span>
+            <span className='span'></span>
               <span className="transition w-[12rem] inline-block opacity-100 group-hover:opacity-0 duration-700 ease-in-out transform group-hover:-translate-y-4">Discover more of our work</span>
               <br />
               <span className="absolute w-[12rem] -ml-24 transition opacity-0 group-hover:opacity-100 duration-700 ease-in-out transform group-hover:-translate-y-5">Discover more of our work</span>

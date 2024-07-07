@@ -41,7 +41,7 @@ const Page3 = () => {
     };
   }, []);
   return (
-    <section className={`page3 relative text-white px-4 lg:px-44 py-10 max-[620px]:py-0 ${roboto.className}`}>
+    <section className={`page3 overflow-hidden relative text-white px-4 lg:px-44 py-10 max-[620px]:py-0 ${roboto.className}`}>
       <h5 className="text-center text-xs font-bold py-20">FEATURED INSIGHTS</h5>
 
       <div className="grid grid-cols-1 max-[620px]:flex max-[620px]:flex-col max-[620px]:justify-center  md:grid-cols-2 gap-4 gap-x-16 gap-y-36 max-[620px]:gap-y-10">
@@ -126,8 +126,12 @@ const Page3 = () => {
         </div>
       </div>
 
-      <div className="py-24 flex items-center justify-center">
-      <button className="main-btn m-6 bg-[#1D1D1F]  md:inline-block text-sm font-bold px-8 py-4 md:mr-10 border-2 border-[#9d6cff] bg-transparent text-white rounded-full group">
+      <div className="py-24 max-[620px]:py-14 flex items-center justify-center">
+      <button className="main-btn overflow-hidden m-6 bg-[#1D1D1F]  md:inline-block text-sm font-bold px-8 py-4 md:mr-10 border-2 border-[#9d6cff] bg-transparent text-white rounded-full group">
+                <span className='span -mt-[.2]'></span>
+                {/* <span className='span '></span> */}
+                <span className='span top-[3.2rem]'></span>
+                <span className='span'></span>
               <span className="transition z-50 w-[12rem] inline-block opacity-100 group-hover:opacity-0 duration-700 ease-in-out transform group-hover:-translate-y-4">Discover more insights</span>
               <br />
               <span className="absolute z-50 w-[12rem] -ml-24 transition opacity-0 group-hover:opacity-100 duration-700 ease-in-out transform group-hover:-translate-y-5">Discover more insights</span>
