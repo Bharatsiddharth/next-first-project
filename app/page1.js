@@ -170,7 +170,11 @@ const page1 = () => {
 
 
           <div class="h-3/4 hidden overflow-y-hidden max-[1000px]:block  mt-32 max-[620px]:mt-0 w-1/2 max-[620px]:w-full max-[620px]:px-4 max-[620px]:py-0 max-[620px]:pt-20  items-center justify-center">
-            <div class="  max-[620px]:mt-32 max-[770px]:ml-[20vw] max-[768px]:ml-[2vw] max-[620px]:ml-[18vw]  max-[520px]:ml-[12vw]  max-[1000px]:mr-[10rem]    md:left-16 flex flex-col items-center justify-center font-extrabold text-white max-[770px]:w-[18rem]  w-[40rem] max-[1000px]:mt-[8rem] absolute">
+           <div className='m-auto w-full  bg-red-500'>
+
+           {/* <div class="  max-[620px]:mt-32  max-[768px]:ml-[2vw] max-[620px]:ml-[18vw]  max-[520px]:ml-[12vw]  max-[1000px]:mr-[10rem]    md:left-16 flex flex-col items-center justify-center font-extrabold text-white max-[770px]:w-[18rem]  w-[40rem] max-[1000px]:mt-[8rem] absolute"> */}
+           <div class="  w-[100%] top-[35%] left-0 flex flex-col items-center justify-center font-extrabold text-white absolute">
+
               <h1 class="text-[9vw]    text-center max-[620px]:text-5xl leading-3 font-bold">Conversion</h1>
 
               <div class="flex flex-col items-center pt-4 max-[620px]:py-0 md:flex-row md:items-center md:gap-4">
@@ -186,7 +190,10 @@ const page1 = () => {
                 Discover what we do
               </button>
 
+              
+
             </div>
+           </div>
             <video class="object-cover h-full max-[1000px]:h-3/4 max-[770px]:h-3/4 max-[770px]:w-full  max-[620px]:h-full  w-full  rounded-3xl" autoplay loop muted src="https://player.vimeo.com/progressive_redirect/playback/725952347/rendition/1080p/file.mp4?loc=external&signature=57a7c3522f4c7c21f8123a490b67c603be4efaa02c9c70cfde99789ab3ea9a29">
             </video>
 

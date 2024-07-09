@@ -132,7 +132,7 @@ const footer = () => {
 
       <div className="bottomfooter flex flex-col lg:flex-row items-center px-4 md:px-10 py-8 border-t-2 border-gray-300 mx-4 md:mx-10 gap-5">
       <div className="left w-full lg-flex-col   lg:w-1/2 mb-4 md:mb-">
-        <div className="flex flex-col sm:flex-row text-xs pt-2 font-bold justify-between items-center px-2 md:px-0 gap-2 sm:gap-0">
+        <div className="flex flex-col  sm:flex-row text-xs pt-4  font-bold justify-between items-center px-2 md:px-0 gap-2 sm:gap-0">
           <h4>PRIVACY POLICY</h4>
           <h4>DISCLAIMER</h4>
           <h4>TERMS AND CONDITIONS</h4>
@@ -143,7 +143,7 @@ const footer = () => {
   <div className="right w-full md:w-1/2">
     <div className="flex flex-col lg:flex-row   text-sm font-bold justify-between items-center font-mono px-2 md:px-0">
       <div className="flex flex-col md:flex-row items-center gap-4   mb-4 md:mb-0 px-4 ">
-        <h4 className="mb-2 md:mb-0 w-40">SEE WHAT WE'RE UP TO</h4>
+        <h4 className="mb-2 md:mb-0 w-44 text-center">SEE WHAT WE'RE UP TO</h4>
         <div className="icons text-xl flex gap-4 md:gap-5 text-white">
           <i className="ri-facebook-circle-fill"></i>
           <i className="ri-linkedin-box-fill"></i>

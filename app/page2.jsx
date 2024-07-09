@@ -49,6 +49,20 @@ const page2 = () => {
             description: 'Bringing live-guided immersive virtual tours to a global audience',
             category: 'WEB . 360 PHOTOGRAPHY'
         },
+        {
+            id: 1,
+            imageUrl: 'https://images.unsplash.com/photo-1719216324207-3b9727413913?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            title: 'Six million Voices',
+            description: 'Bringing live-guided immersive virtual tours to a global audience',
+            category: 'WEB . 360 PHOTOGRAPHY'
+        },
+        {
+            id: 1,
+            imageUrl: 'https://images.unsplash.com/photo-1719216324207-3b9727413913?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            title: 'Six million Voices',
+            description: 'Bringing live-guided immersive virtual tours to a global audience',
+            category: 'WEB . 360 PHOTOGRAPHY'
+        },
        
         
         
@@ -57,47 +71,44 @@ const page2 = () => {
 
     useEffect(() => {
         const matchMedia = window.matchMedia("(min-width: 620px)");
-      
-        if (matchMedia.matches) {
-          gsap.to(".card1-page2", {
-            x: -1800,
-            scrollTrigger: {
-              trigger: ".scroller",
-              start: "top bottom",
-              end: "bottom end",
-              scrub: 5,
-            //   markers: true
-            }
-          });
-        }
-      
-        const handleResize = () => {
-          if (matchMedia.matches) {
+
+        const animateCards = () => {
             gsap.to(".card1-page2", {
-              x: -1000,
-              scrollTrigger: {
-                trigger: ".scroller",
-                start: "top bottom",
-                end: "bottom end",
-                scrub: 5,
-                // markers: true
-              }
+                x: matchMedia.matches ? -2000 : 0,
+                scrollTrigger: {
+                    trigger: ".scroller",
+                    start: "top 600px",
+                    end: "bottom end",
+                    scrub: 5,
+                    // markers: true,
+                    onLeave: () => gsap.to(".card1-page2", { x: 0 }), // Reset x position when leaving
+                }
             });
-          } else {
-            // Kill the animation if the width is below 620px
-            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-          }
         };
-      
+
+        if (matchMedia.matches) {
+            animateCards();
+        }
+
+        const handleResize = () => {
+            if (matchMedia.matches) {
+                animateCards();
+            } else {
+                // Kill the animation if the width is below 620px
+                ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+                gsap.set(".card1-page2", { x: 0 }); // Ensure position is reset
+            }
+            ScrollTrigger.refresh(); // Refresh ScrollTrigger to recalculate positions
+        };
+
         matchMedia.addEventListener("change", handleResize);
-      
+
         // Clean up
         return () => {
-          matchMedia.removeEventListener("change", handleResize);
-          ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+            matchMedia.removeEventListener("change", handleResize);
+            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
         };
-      }, []);
-      
+    }, []);
 
 
     useEffect(() => {
@@ -148,7 +159,7 @@ const page2 = () => {
             </div> 
 
 
-            <div className='main-container '>
+            <div className='main-container'>
 
             <div className="drag-cursor relative transition duration-300 ease-linear  bg-[#a374ff] text-white max-[620px]:hidden h-28 w-28 flex items-center justify-center opacity-0  rounded-full p-4">
                     <span className="text-center">Drag <br/> or <br /> Click</span>
@@ -186,7 +197,12 @@ const page2 = () => {
 
             </div>
 
-            <div className=" py-24  z-[1000] max-[620px]:mt-20  max-[620px]:py-6 max-[620px]:px-0 max-[620px]:items-center max-[620px]:justify-center flex px-40 ">
+          
+
+            </div>
+
+
+            <div className="    z-[1000] max-[620px]:mt-20  max-[620px]:py-6 max-[620px]:px-0 max-[620px]:items-center max-[620px]:justify-center flex px-40 ">
             <button className=" main-btn m-6  overflow-hidden   md:inline-block text-sm font-bold px-8 py-4 md:mr-10 border-2 border-[#9d6cff] bg-transparent text-white rounded-full group">
             <span className='span -mt-[.2]'></span>
             {/* <span className='span '></span> */}
@@ -197,11 +213,6 @@ const page2 = () => {
               <span className="absolute w-[12rem] -ml-24 transition opacity-0 group-hover:opacity-100 duration-700 ease-in-out transform group-hover:-translate-y-5">Discover more of our work</span>
             </button>
             </div>
-
-            </div>
-
-
-            
         
         </div>
         </section>

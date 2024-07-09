@@ -15,42 +15,42 @@ gsap.registerPlugin(ScrollTrigger);
 const page4 = () => {
 
 
-  useEffect(() => {
-    const typeSplit = new SplitType('.page4 h1', {
-      types: 'lines, words, chars',
-      tagName: 'pan',
-    });
+  // useEffect(() => {
+  //   const typeSplit = new SplitType('.page4 h1', {
+  //     types: 'lines, words, chars',
+  //     tagName: 'pan',
+  //   });
 
-    const chars = typeSplit.chars;
+  //   const chars = typeSplit.chars;
 
-    const tl = gsap.timeline({
-      onComplete: () => {
-        typeSplit.revert();
-      },
-    });
+  //   const tl = gsap.timeline({
+  //     onComplete: () => {
+  //       typeSplit.revert();
+  //     },
+  //   });
 
-    tl.staggerFrom(chars, 0.55, {
-      opacity: 0,
-      y: 100,
-      stagger: { from: 'center', amount: 0.22 },
-      ease: 'back.out(4)',
-    });
+  //   tl.staggerFrom(chars, 0.55, {
+  //     opacity: 0,
+  //     y: 100,
+  //     stagger: { from: 'center', amount: 0.22 },
+  //     ease: 'back.out(4)',
+  //   });
 
-    ScrollTrigger.create({
-      trigger: '.h1-page4',
-      start: '-300px center',
-      end: '100px center',
-      scrub: true,
-      // markers: true,
-      animation: tl,
-      scrub: 3
-    });
+  //   ScrollTrigger.create({
+  //     trigger: '.h1-page4',
+  //     start: '-300px center',
+  //     end: '100px center',
+  //     scrub: true,
+  //     // markers: true,
+  //     animation: tl,
+  //     scrub: 3
+  //   });
 
-    return () => {
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-      typeSplit.revert();
-    };
-  }, []);
+  //   return () => {
+  //     ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+  //     typeSplit.revert();
+  //   };
+  // }, []);
 
 
   return (
