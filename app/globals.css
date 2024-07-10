@@ -16,27 +16,7 @@ html{
     height: 100%;
     width: 100%;
 }
-@keyframes glow {
-  0% {
-    box-shadow: 0 0 2px #ff0000, 0 0 2px #ff0000, 0 0 2px #ff0000, 0 0 2px #ff0000;
-  }
-  20% {
-    box-shadow: 0 0 2px #ff7f00, 0 0 2px #ff7f00, 0 0 2px #ff7f00, 0 0 2px #ff7f00;
-  }
-  20% {
-    box-shadow: 0 0 2px #ffff00, 0 0 2px #ffff00, 0 0 2px #ffff00, 0 0 2px #ffff00;
-  }
-  60% {
-    box-shadow: 0 0 2px #00ff00, 0 0 2px #00ff00, 0 0 2px #00ff00, 0 0 2px #00ff00;
-  }
-  80% {
-    box-shadow: 0 0 2px #0000ff, 0 0 2px #0000ff, 0 0 2px #0000ff, 0 0 2px #0000ff;
-  }
-  100% {
-    box-shadow: 0 0 2px #8b00ff, 0 0 2px #8b00ff, 0 0 2px #8b00ff, 0 0 2px #8b00ff;
-  }
-}
-/* Apply the animation on hover */
+
 
 /* page1 btn  */
 
