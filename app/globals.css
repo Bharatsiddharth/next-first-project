@@ -41,7 +41,7 @@ html{
 /* page1 btn  */
 
 .main-btn:hover #an-cir1 {
-  transform: scale(2.5);
+  transform: scale(3);
 }
 
 .main-btn:hover #an-cir2 {

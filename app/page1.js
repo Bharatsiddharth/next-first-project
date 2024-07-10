@@ -107,9 +107,9 @@ const page1 = () => {
 
 
           <div class="h-3/4 max-[1000px]:hidden  mt-32 w-1/3 max-[620px]:w-full max-[620px]:px-4 max-[620px]:py-20 flex items-center justify-center   scrollbar-hide p-20">
-            <div class="content top-[40%] max-[1000px]:hidden left-[18vw] leading-10 flex flex-col z-[500] text-white max-[620px]:w-[20rem] w-[60rem] max-[1200px]:w-[48rem] max-[1100px]:right-[25rem] absolute">
+            <div class="content top-[40%]    max-[1000px]:hidden left-[18vw] leading-10 flex flex-col z-[500] text-white max-[620px]:w-[20rem] max-[1200px]:w-[48rem] max-[1100px]:right-[25rem] absolute">
               <h1 class="text-[10vw] max-[1100px]:text-8xl text-center max-[620px]:text-5xl font-bold">Conversion</h1>
-              <div class="flex flex-col h-54 max-[1100px]:h-14 mt-5 items-center xl:py-2 max-[620px]:py-0 md:flex-row md:items-center md:gap-10">
+              <div class="flex flex-col h-54 max-[1100px]:h-14 mt-5 items-center   xl:py-4 max-[620px]:py-0 md:flex-row md:items-center md:gap-10">
                 <h1 class="through max-[1100px]:text-8xl text-[10vw]">through</h1>
                 <button className="main-btn m-10 overflow-hidden  hidden md:inline-block text-sm font-bold px-8 py-4 md:mr-10 text-black bg-yellow-200 rounded-full group">
                   <span className="transition z-50 w-[8rem] inline-block opacity-100 group-hover:opacity-0 duration-700 ease-in-out transform group-hover:-translate-y-4">Discover what we do</span>

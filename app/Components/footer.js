@@ -32,11 +32,12 @@ const footer = () => {
       {
         scaleY: 1,
         duration: 2,
+        borderRadius: 0,
         ease: 'power4.out',
         scrollTrigger: {
           trigger: 'footer',
-          start: '-1000px top',
-          end: '-700px end',
+          start: '-1100px top',
+          end: '-500px end',
           scrub: true,
           // markers: true,
         },
@@ -64,10 +65,12 @@ const footer = () => {
 
 
   return (
-    <footer id='' className={`bg-[#9d6cff] mt-40 max-[620px]:mt-1   relative pt-10 rounded-t-[30%] `}>
+    <footer id='' className={`bg-[#9d6cff] mt-40 max-[620px]:mt-1 rounded-t-[50%] `}>
       {/* <div className='w-full h-[100%] bg-red-300 -top-52 absolute rounded-t-[50%]'></div> */}
-      <Header />
+      {/* <Header />
+      <svg className='absolute -top-52 z-0' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L120,170.7C240,149,480,107,720,106.7C960,107,1200,149,1320,170.7L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg> */}
       <div className="top flex mt-20 flex-col max-[1000px]:gap-10 items-center md:flex-row justify-between p-8 md:p-28 px-4 ">
+        
         <div className="left mb-10 md:mb-0 text-center md:text-left">
           <h4 className="font-bold text-xs">STAY UP TO DATE</h4>
           <h1 className={`text-4xl md:text-7xl font-bold pb-10 ${blinker.className}`}>
@@ -95,7 +98,7 @@ const footer = () => {
           </div>
         </div>
 
-        <div className="owl mb-10 max-[1150px]:hidden  md:mb-0">
+        <div className="owl z-10 mb-10 max-[1150px]:hidden  md:mb-0">
           <img className="h-80 w-80 mx-auto" src={Owl.src} alt="owl" />
           <div className="eyes flex justify-center mt-4">
             <div id="left-eye" className="eye mr-2">
