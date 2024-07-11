@@ -11,6 +11,9 @@ import Footer from './Components/footer'
 import { useEffect } from 'react';
 
 
+import Form from './Form/page'
+
+
 
 
 
@@ -32,6 +35,9 @@ const Page = () => {
  
   return (
     <>
+
+      {/* <Form/> */}
+
       <div className="main">
         
 

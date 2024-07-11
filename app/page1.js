@@ -99,7 +99,7 @@ const page1 = () => {
 
 
           <div className="h-3/4 max-[1000px]:hidden  mt-32 w-1/3 max-[620px]:w-full max-[620px]:px-4 max-[620px]:py-20 flex items-center justify-center   scrollbar-hide p-20">
-            <div className="content top-[40%]    max-[1000px]:hidden left-[18vw] leading-10 flex flex-col z-[500] text-white max-[620px]:w-[20rem] max-[1200px]:w-[48rem] max-[1100px]:right-[25rem] absolute">
+            <div className="content top-[35%]    max-[1000px]:hidden left-[18vw] leading-10 flex flex-col z-[500] text-white max-[620px]:w-[20rem] max-[1200px]:w-[48rem] max-[1100px]:right-[25rem] absolute">
               <h1 className="text-[10vw] max-[1100px]:text-8xl text-center max-[620px]:text-5xl font-bold">Conversion</h1>
               <div className="flex flex-col h-54 max-[1100px]:h-14 mt-5 items-center   xl:py-4 max-[620px]:py-0 md:flex-row md:items-center md:gap-10">
                 <h1 className="through max-[1100px]:text-8xl text-[10vw]">through</h1>

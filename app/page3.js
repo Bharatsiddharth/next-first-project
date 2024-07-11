@@ -124,6 +124,49 @@ const Page3 = () => {
             </div>
           </div>
         </div>
+
+
+         <div className="card1 w-full flex flex-col max-[620px]:py-5">
+          <div className="cursor rotate-12 absolute">
+            <img
+              className="h-36 w-32 rounded-2xl opacity-0"
+              src="https://example.com/card3.jpg"
+              alt=""
+            />
+          </div>
+          <div className="flex flex-col z-10 justify-center">
+            <h5 className="text-xs font-bold text-[#17f1d1]">3D</h5>
+            <h1 className="text-3xl sm:text-4xl py-6">
+              Photogrammetry and NeRF compared
+            </h1>
+            <div className="main-button">
+              <button className="btn btn-1 text-start">Continue reading</button>
+            </div>
+          </div>
+        </div>
+
+        <div className="card1 w-full flex flex-col max-[620px]:py-5">
+          <div className="cursor rotate-12 absolute">
+            <img
+              className="h-36 w-32 rounded-2xl opacity-0"
+              src="https://images.unsplash.com/photo-1719386217659-6bde4641915c?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div className="flex flex-col z-10 justify-center">
+            <h5 className="text-xs font-bold text-[#A374FF]">
+              VIRTUAL REALITY . 360 PHOTOGRAPHY
+            </h5>
+            <h1 className="text-3xl sm:text-4xl py-6">
+              Digital discoveries: how VR is reshaping the travel industry
+            </h1>
+            <div className="main-button">
+              <button className="btn btn-2 text-start">Continue reading</button>
+            </div>
+          </div>
+        </div>
+
+
       </div>
 
       <div className="py-24 max-[620px]:py-14 flex items-center justify-center">
