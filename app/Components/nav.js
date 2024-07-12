@@ -129,7 +129,7 @@ const Nav = () => {
                 }`}
             >
               <div className="flex flex-col-reverse lg:flex-row items-start h-screen lg:justify-between px-10 bg-white">
-                <div className={`nav2-left mt-5 lg:mt-96 ${menuOpen
+                <div className={`nav2-left z-[1000] mt-5 lg:mt-96 ${menuOpen
                  ? 'opacity-1 transition delay-1000 duration-500'
                   : 'opacity-0 transition delay-1000 duration-500'
                   } `}>
@@ -157,9 +157,13 @@ const Nav = () => {
                 </div>
               </div>
               <div
-                className={`w-full z-[1000] ${menuOpen? '-[70vh]' : '-[0] delay-300 duration-500'
-                  } transition-all duration-1000 rounded-b-full bg-white`}
-              ></div>
+                className={`w-full rotate-180  z-[1000] ${menuOpen
+                  ? 'h-[20vw]'
+                   : 'h-[10vw]'
+                   } transition-all ease-in-out delay-500 duration-500 rounded-b-full `}
+              >
+                <svg className='absolute' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="white" fill-opacity="1" d="M0,192L120,170.7C240,149,480,107,720,106.7C960,107,1200,149,1320,170.7L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+              </div>
             </nav>
           </div>
         </section>
@@ -168,7 +172,7 @@ const Nav = () => {
       {formOpen && (
         <div className='MainForm z-[1000]  fixed top-[50%] left-[50%] overflow-hidden transform translate-x-[-50%] translate-y-[-50%]'>
           <i onClick={toggleForm} className="close-icons ri-close-circle-fill  text-3xl p-5 text-[#9d6cff] absolute right-0"></i>
-          <div className='w-[70vw] max-[620px]:w-[28rem] h-[35rem] bg-[#1d1d1fd2] flex items-center justify-center'>
+          <div className='w-[70vw] max-[620px]:w-[25rem] h-[35rem] bg-[#1d1d1fd2] flex items-center justify-center'>
             <div className="z-[999] form-container bg-gradient-to-r from-[#212121] to-[#212121] bg-padding border-2 border-transparent p-8 text-sm font-inherit text-white flex flex-col gap-5 box-border rounded-lg bg-[length:200%_100%] animate-gradient">
               <form className="form flex flex-col gap-5">
                 <div className="form-group flex flex-col gap-1">
