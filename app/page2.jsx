@@ -149,7 +149,7 @@ const page2 = () => {
     <>
         <section >
         <div className='overflow-hidden'>
-            <div id='discover' className='text-white relative flex justify-center gap-24   py-40 max-[620px]:py-10 max-[620px]:px-4'>
+            <div id='discover' className='text-white   relative flex justify-center gap-24   py-40 max-[620px]:my-10 max-[620px]:px-4'>
                 <h6 className='text-sm max-[620px]:text-xs  font-bold text-[#a374ff]' >SELECTED WORK</h6>
                 <p className={`text-3xl max-[620px]:text-xl text-center md:text-left pb-8 ${roboto.className}`}>
                     Enjoy some of our best work <br />
