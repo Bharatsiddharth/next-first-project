@@ -170,28 +170,31 @@ const Nav = () => {
       </nav>
 
       {formOpen && (
-        <div className='MainForm z-[1000]  fixed top-[50%] left-[50%] overflow-hidden transform translate-x-[-50%] translate-y-[-50%]'>
-          <i onClick={toggleForm} className="close-icons ri-close-circle-fill  text-3xl p-5 text-[#9d6cff] absolute right-0"></i>
-          <div className='w-[70vw] max-[620px]:w-[25rem] h-[35rem] bg-[#1d1d1fd2] flex items-center justify-center'>
-            <div className="z-[999] form-container bg-gradient-to-r from-[#212121] to-[#212121] bg-padding border-2 border-transparent p-8 text-sm font-inherit text-white flex flex-col gap-5 box-border rounded-lg bg-[length:200%_100%] animate-gradient">
-              <form className="form flex flex-col gap-5">
-                <div className="form-group flex flex-col gap-1">
-                  <h1 htmlFor="name" className="">Name</h1>
-                  <input required name="name" id="name" placeholder='Enter Your Name' type="text" className="w-full p-3.5 rounded-md text-white font-inherit bg-transparent border border-[#414141] focus:outline-none focus:border-[#e81cff] placeholder-opacity-50" />
-                </div>
-                <div className="form-group flex flex-col gap-1">
-                  <h1 htmlFor="email" className="">Email</h1>
-                  <input required name="email" id="email" placeholder='Enter Your Email' type="text" className="w-full p-3.5 rounded-md text-white font-inherit bg-transparent border border-[#414141] focus:outline-none focus:border-[#e81cff] placeholder-opacity-50" />
-                </div>
-                <div className="form-group flex flex-col gap-1">
-                  <h1 htmlFor="phone" className="">Phone Number</h1>
-                  <input required name="phone" id="phone" placeholder='Enter Your Mobile Number' type="text" className="w-full p-3.5 rounded-md text-white font-inherit bg-transparent border border-[#414141] focus:outline-none focus:border-[#e81cff] placeholder-opacity-50" />
-                </div>
-                <button type="submit" className="form-submit-btn flex items-start justify-center self-start font-inherit text-white font-semibold w-2/5 bg-[#313131] border border-[#414141] p-3.5 text-inherit gap-2 mt-2 cursor-pointer rounded-md hover:bg-[#9d6cff] hover:text-white transition-all ease-in-out">Submit</button>
-              </form>
-            </div>
-          </div>
-        </div>
+       <div className='MainForm z-[1000]  fixed top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]'>
+       <div className='flex max-[850px]:flex-col relative h-full max-h-[35rem]  bg-[#1D1D1F] max-w-[70vw] max-[850px]:w-[25rem]'>
+         <div className='formImg  w-1/2  max-[850px]:w-full bg-red-100 max-[850px]:object-contain max-[850px]:h-[20vw] bg-cover bg-center'>
+           <img className='w-full h-full object-cover' src="https://plus.unsplash.com/premium_photo-1664124381898-5f79552b408d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+         </div>
+         <div className="z-[999] w-1/2 max-[850px]:w-full   form-container  from-[#212121] to-[#212121] bg-padding border-2 border-transparent p-8 text-sm font-inherit text-white flex flex-col gap-5 box-border rounded-lg bg-[length:200%_100%] animate-gradient">
+           <form className="form my-10 w-full flex flex-col gap-5">
+             <i onClick={toggleForm} className="z-50 close-icons ri-close-circle-fill  text-3xl p-5 text-[#9d6cff] absolute right-0 top-0"></i>
+             <div className="form-group flex flex-col gap-1">
+               <h1 htmlFor="name" className="">Name</h1>
+               <input required name="name" id="name" placeholder='Enter Your Name' type="text" className="w-full p-3.5 rounded-md text-white font-inherit bg-transparent border border-[#414141] focus:outline-none focus:border-[#e81cff] placeholder-opacity-50" />
+             </div>
+             <div className="form-group flex flex-col py-5 max-[620px]:py-0  gap-1">
+               <h1 htmlFor="email" className="">Email</h1>
+               <input required name="email" id="email" placeholder='Enter Your Email' type="text" className="w-full p-3.5 rounded-md text-white font-inherit bg-transparent border border-[#414141] focus:outline-none focus:border-[#e81cff] placeholder-opacity-50" />
+             </div>
+             <div className="form-group flex flex-col gap-1">
+               <h1 htmlFor="phone" className="">Phone Number</h1>
+               <input required name="phone" id="phone" placeholder='Enter Your Mobile Number' type="text" className="w-full p-3.5 rounded-md text-white font-inherit bg-transparent border border-[#414141] focus:outline-none focus:border-[#e81cff] placeholder-opacity-50" />
+             </div>
+             <button type="submit" className="form-submit-btn flex items-start justify-center self-start font-inherit text-white font-semibold w-2/5 bg-[#313131] border border-[#414141] p-3.5 text-inherit gap-2 mt-2 cursor-pointer rounded-md hover:bg-[#9d6cff] hover:text-white transition-all ease-in-out">Submit</button>
+           </form>
+         </div>
+       </div>
+     </div>
       )}
     </>
   );

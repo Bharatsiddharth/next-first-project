@@ -1027,9 +1027,7 @@ video{
 /* form css */
 
 .form-container {
-  width: 400px;
-  background: linear-gradient(#212121, #212121) padding-box,
-              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+  /* width: 400px; */
   /* border: 2px solid transparent; */
   /* padding: 32px 24px; */
   /* font-size: 14px; */
@@ -1044,19 +1042,6 @@ video{
   animation: gradient 5s ease infinite;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
 
 
@@ -1080,7 +1065,7 @@ video{
 
 .form-container .form-group input:focus {
   outline: none;
-  border-color: #e81cff;
+  /* border-color: #e81cff; */
 }
 
 
