@@ -147,9 +147,9 @@ const page2 = () => {
 
   return (
     <>
-        <section>
+        <section >
         <div className='overflow-hidden'>
-            <div className='text-white relative flex justify-center gap-24   py-40 max-[620px]:py-10 max-[620px]:px-4'>
+            <div id='discover' className='text-white relative flex justify-center gap-24   py-40 max-[620px]:py-10 max-[620px]:px-4'>
                 <h6 className='text-sm max-[620px]:text-xs  font-bold text-[#a374ff]' >SELECTED WORK</h6>
                 <p className={`text-3xl max-[620px]:text-xl text-center md:text-left pb-8 ${roboto.className}`}>
                     Enjoy some of our best work <br />
@@ -164,13 +164,13 @@ const page2 = () => {
             <div className="drag-cursor relative transition duration-300 ease-linear  bg-[#a374ff] text-white max-[620px]:hidden h-28 w-28 flex items-center justify-center opacity-0  rounded-full p-4">
                     <span className="text-center">Drag <br/> or <br /> Click</span>
             </div>
-            <div className="scroller w-[]   transition-all ease-in-out duration-500  rotate-6  scale-105 pl-[80rem] max-[620px]:pl-0 relative max-[620px]:rotate-0 max-[620px]:gap-20 max-[620px]:flex max-[620px]:flex-col max-[620px]:items-center max-[620px]:justify-center    flex gap-10 overflow-x-auto overflow-y-hidden scrollbar-none">
+            <div id='Scroller' className="scroller w-[]   transition-all ease-in-out duration-500  rotate-6  scale-105 pl-[80rem] max-[620px]:pl-0 relative max-[620px]:rotate-0 max-[620px]:gap-20 max-[620px]:flex max-[620px]:flex-col max-[620px]:items-center max-[620px]:justify-center    flex gap-10 overflow-x-auto overflow-y-hidden scrollbar-none">
             
             
             
 
             {cards.map((card) => (
-                <div key={card.id} className="card1-page2    mt-5 max-[620px]:flex max-[620px]:flex-col   max-[620px]:w[20rem] max-[620px]:h-[25rem]   h-[33rem] relative">
+                <div id='Scroller'  key={card.id} className="card1-page2    mt-5 max-[620px]:flex max-[620px]:flex-col   max-[620px]:w[20rem] max-[620px]:h-[25rem]   h-[33rem] relative">
                     <div className='card w-[35rem] max-[620px]:w-[20rem] rounded-2xl   overflow-hidden relative'>
                     <div className="drag-cursor bg-[#a374ff] text-white max-[620px]:hidden h-28 w-28 flex items-center justify-center opacity-0  absolute rounded-full z-10 p-4">
                     <span className="text-center">Drag <br/> or <br /> Click</span>

@@ -8,6 +8,9 @@ import { Blinker } from 'next/font/google';
 gsap.registerPlugin(ScrollTrigger);
 // import Blob from './blob';
 import Img from './Components/assets/images/arrow-up.svg';
+// import ScrollLink from 'next-scroll-to';
+import Link from 'next/link';
+// import { ScrollLink } from 'next-scroll-to';
 
 const blinker = Blinker({
   subsets: ['latin'],
@@ -16,6 +19,7 @@ const blinker = Blinker({
 });
 
 const page1 = () => {
+  
 
   useEffect(() => {
     const typeSplit = new SplitType('.content h1', {
@@ -52,6 +56,7 @@ const page1 = () => {
 
         <div className={`h-screen bg-[#1D1D1F] w-full flex items-center justify-center ${blinker.className}`}>
 
+          <Link href="#Scroller" scroll={true} >
           <div
             className="left-arrow relative max-[750px]:hidden"
             onMouseOver={() => setIsHovered(true)}
@@ -96,6 +101,7 @@ const page1 = () => {
               </div>
             </div>
           </div>
+          </Link>
 
 
           <div className="h-3/4 max-[1000px]:hidden   mt-32 w-1/3 max-[620px]:w-full max-[620px]:px-4 max-[620px]:py-20 flex items-center justify-center   scrollbar-hide p-20">
@@ -103,6 +109,7 @@ const page1 = () => {
               <h1 className="text-[10vw] max-[1100px]:text-8xl text-center max-[620px]:text-5xl font-bold">Conversion</h1>
               <div className="flex flex-col h-54 max-[1100px]:h-14  mt-5 items-center   xl:py-4 max-[620px]:py-0 md:flex-row md:items-center md:gap-24">
                 <h1 className="through max-[1100px]:text-8xl text-[10vw]">through</h1>
+                <Link href="#discover" scroll={true}>
                 <button className="main-btn m-10 overflow-hidden  hidden md:inline-block text-sm font-bold px-8 py-4 md:mr-10 text-black bg-yellow-200 rounded-full group">
                   <span className="transition z-50 w-[8rem] inline-block opacity-100 group-hover:opacity-0 duration-700 ease-in-out transform group-hover:-translate-y-4">Discover what we do</span>
                   <br />
@@ -115,6 +122,7 @@ const page1 = () => {
                 </div>
 
                 </button>
+                </Link>
               </div>
               <h1 className="text-[10vw]  ml-32 mt-2 pt-3 max-[620px]:ml-0 text-center max-[1100px]:text-8xl max-[620px]:text-5xl leading-8 font-bold">immersion</h1>
               <button className="my-6 mx-12 px-8 hidden max-[620px]:block max-[620px]:text-xs py-4 text-black bg-yellow-200 rounded-full">
@@ -171,16 +179,22 @@ const page1 = () => {
 
               <div className="flex flex-col items-center pt-4 max-[620px]:py-0 md:flex-row md:items-center md:gap-4">
                 <h1 className="text-5xl md:text-[10vw] md:ml-20">through</h1>
+                <Link href="#discover" scroll={true}>
                 <button className="m-12 max-[1020px]:w-[15rem] hidden md:inline-block text-sm font-bold px-8 py-4 md:mr-20 text-black bg-yellow-200 rounded-full max-[620px]:text-xs max-[620px]:px-4 max-[620px]:py-2">
                   Discover what we do
                 </button>
+                </Link>
+                
               </div>
 
               <h1 className="text-[9vw]  ml-32 max-[620px]:ml-0 max-[770px]:mr-32 max-[620px]:mr-1 max-[620px]:text-5xl leading-10 font-bold">immersion</h1>
               {/* <h1 className="text-9xl bg-red-200 max-[620px]:text-5xl w-[55rem] leading-8 max-[620px]:text-center text-right font-bold">immersion</h1> */}
+              <Link href="#discover" scroll={true}>
               <button className="my-6 mx-12 px-8 py-4 mr-20 text-black bg-yellow-200 rounded-full hidden max-[767px]:block max-[770px]:mx-4 max-[620px]:mx-2 max-[620px]:text-xs max-[620px]:px-4 max-[620px]:py-2">
                 Discover what we do
               </button>
+              </Link>
+              
 
               
 
