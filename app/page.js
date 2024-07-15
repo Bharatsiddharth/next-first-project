@@ -7,6 +7,7 @@ import Page3 from './page3';
 // import ourTeam from './ourTeam';
 import Page4 from './page4'
 import Page2 from './page2';
+import Page5 from './page5'
 import Blob from './blob';
 import Footer from './Components/footer'
 
@@ -49,9 +50,9 @@ const Page = () => {
         <Page2/>
         <Page3/>
 
-          {/* <ourTeam/> */}
-
+        <Page5/>
         <Page4/>
+        
         <Footer/>
 
       </div>
