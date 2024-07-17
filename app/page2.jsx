@@ -158,7 +158,7 @@ const page2 = () => {
                 </p>
             </div> */}
 
-<div className="text-white px-20 w-full my-20 flex flex-col md:flex-row">
+<div className="text-white px-20 max-[620px]:px-12 w-full my-20 flex flex-col md:flex-row">
   <div className="w-full md:w-1/2 max-[800px]:py-10 max-[800px]:pt-72 relative">
     <img className="absolute z-10 rounded-xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2/3 max-[800px]:w-full h-80" src="https://plus.unsplash.com/premium_photo-1680103200092-47d168b2a46c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
     <img className="absolute rotate-6 rounded-xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2/3 h-80 max-[800px]:w-full" src="https://images.unsplash.com/photo-1558256708-bc39e034b935?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
