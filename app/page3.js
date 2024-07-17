@@ -42,7 +42,7 @@ const Page3 = () => {
   }, []);
   return (
     <section className={`page3 overflow-hidden relative text-white px-4 lg:px-44 py-10 max-[620px]:py-0 ${roboto.className}`}>
-      <h5 className="text-center text-xs font-bold py-20">FEATURED INSIGHTS</h5>
+      <h5 className="text-center text-sm font-bold py-20">Transform Your Learning with Our Unique Features</h5>
 
       <div className="grid grid-cols-1 max-[620px]:flex max-[620px]:flex-col max-[620px]:justify-center  md:grid-cols-2 gap-4 gap-x-16 gap-y-36 max-[620px]:gap-y-10">
         <div className="card1 w-full flex flex-col max-[620px]:py-5">
@@ -54,9 +54,9 @@ const Page3 = () => {
             />
           </div>
           <div className="flex flex-col z-10 justify-center">
-            <h5 className="text-xs font-bold text-[#17f1d1]">3D</h5>
-            <h1 className="text-3xl sm:text-4xl py-6">
-              Unleashing immersive experiences: elevate your brand with custom 3D modelling
+            <h5 className="text-xs font-bold text-[#17f1d1]">Live & Recorded Training</h5>
+            <h1 className="text-3xl sm:text-3xl py-6">
+            Access live sessions and recorded classes anytime, ensuring flexible and comprehensive learning.
             </h1>
             <div className="main-button">
               <button className="btn btn-1 text-start">Continue reading</button>
@@ -74,10 +74,10 @@ const Page3 = () => {
           </div>
           <div className="flex flex-col z-10 justify-center">
             <h5 className="text-xs font-bold text-[#A374FF]">
-              Web . 360 PHOTOGRAPHY . 360 Video . 3D
+            Advance Intelligent Support
             </h5>
-            <h1 className="text-3xl sm:text-4xl py-6">
-              Scrollytelling: transforming digital storytelling with engagement and creativity
+            <h1 className="text-3xl sm:text-3xl py-6">
+            Benefit from AI-driven support that enhances your learning experience with instant assistance and feedback.
             </h1>
             <div className="main-button z-10">
               <button className="btn btn-2 text-start">Continue reading</button>
@@ -94,9 +94,9 @@ const Page3 = () => {
             />
           </div>
           <div className="flex flex-col z-10 justify-center">
-            <h5 className="text-xs font-bold text-[#FFD074]">3D</h5>
-            <h1 className="text-3xl sm:text-4xl py-6">
-              Photogrammetry and NeRF compared
+            <h5 className="text-xs font-bold text-[#FFD074]">Real Mariners Interaction</h5>
+            <h1 className="text-3xl sm:text-3xl py-6">
+            Engage with experienced mariners through interactive sessions, gaining valuable industry insights and practical knowledge
             </h1>
             <div className="main-button">
               <button className="btn btn-3 text-start">Continue reading</button>
@@ -114,10 +114,10 @@ const Page3 = () => {
           </div>
           <div className="flex flex-col z-10 justify-center">
             <h5 className="text-xs font-bold text-[#17F1D1]">
-              VIRTUAL REALITY . 360 PHOTOGRAPHY
+            Industry Certified Trainers
             </h5>
-            <h1 className="text-3xl sm:text-4xl py-6">
-              Digital discoveries: how VR is reshaping the travel industry
+            <h1 className="text-3xl sm:text-3xl py-6">
+            Learn from certified maritime professionals who bring real-world expertise to every class and training session.
             </h1>
             <div className="main-button">
               <button className="btn btn-4 text-start">Continue reading</button>
@@ -135,9 +135,9 @@ const Page3 = () => {
             />
           </div>
           <div className="flex flex-col z-10 justify-center">
-            <h5 className="text-xs font-bold text-[#17f1d1]">3D</h5>
-            <h1 className="text-3xl sm:text-4xl py-6">
-              Photogrammetry and NeRF compared
+            <h5 className="text-xs font-bold text-[#17f1d1]"> Doubt Clearing Sessions</h5>
+            <h1 className="text-3xl sm:text-3xl py-6">
+            Participate in dedicated sessions to resolve your doubts and strengthen your understanding of complex topics.
             </h1>
             <div className="main-button">
               <button className="btn btn-1 text-start">Continue reading</button>
@@ -155,10 +155,10 @@ const Page3 = () => {
           </div>
           <div className="flex flex-col z-10 justify-center">
             <h5 className="text-xs font-bold text-[#A374FF]">
-              VIRTUAL REALITY . 360 PHOTOGRAPHY
+            Reliable Learning Technology
             </h5>
-            <h1 className="text-3xl sm:text-4xl py-6">
-              Digital discoveries: how VR is reshaping the travel industry
+            <h1 className="text-3xl sm:text-3xl py-6">
+            Experience seamless learning with our robust, user-friendly platform designed for effective maritime education.
             </h1>
             <div className="main-button">
               <button className="btn btn-2 text-start">Continue reading</button>

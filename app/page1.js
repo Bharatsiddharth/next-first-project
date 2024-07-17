@@ -19,8 +19,6 @@ const blinker = Blinker({
 });
 
 const page1 = () => {
-  
-
   useEffect(() => {
     const typeSplit = new SplitType('.content h1', {
       types: 'lines, words, chars',
@@ -44,6 +42,13 @@ const page1 = () => {
 
   }, []);
 
+  const handleScrollClick = () => {
+    window.scrollTo({ top: document.body.offsetHeight, behavior: 'smooth' });
+  };
+
+  const CircleScrollClick = () => {
+    window.scrollTo({ top: window.innerHeight * 1.85, behavior: 'smooth' });
+  };
 
   const [isHovered, setIsHovered] = useState(false);
 
@@ -54,10 +59,10 @@ const page1 = () => {
       <section className=''>
 
 
-        <div className={`h-screen bg-[#1D1D1F] w-full flex items-center justify-center ${blinker.className}`}>
+        <div className={`page1 h-screen bg-[#1D1D1F] w-full flex items-center justify-center ${blinker.className}`}>
 
-          <Link href="#Scroller" scroll={true} >
-          <div
+          
+          <div onClick={CircleScrollClick}
             className="left-arrow relative max-[750px]:hidden"
             onMouseOver={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
@@ -101,19 +106,19 @@ const page1 = () => {
               </div>
             </div>
           </div>
-          </Link>
+         
 
 
-          <div className="h-3/4 max-[1000px]:hidden   mt-32 w-1/3 max-[620px]:w-full max-[620px]:px-4 max-[620px]:py-20 flex items-center justify-center   scrollbar-hide p-20">
-            <div className="content top-[35%]     max-[1000px]:hidden left-[18vw] leading-10 flex flex-col z-[500] text-white max-[620px]:w-[20rem] max-[1200px]:w-[48rem] max-[1100px]:right-[25rem] absolute">
-              <h1 className="text-[10vw] max-[1100px]:text-8xl text-center max-[620px]:text-5xl font-bold">Conversion</h1>
-              <div className="flex flex-col h-54 max-[1100px]:h-14  mt-5 items-center   xl:py-4 max-[620px]:py-0 md:flex-row md:items-center md:gap-24">
-                <h1 className="through max-[1100px]:text-8xl text-[10vw]">through</h1>
-                <Link href="#discover" scroll={true}>
-                <button className="main-btn m-10 overflow-hidden  hidden md:inline-block text-sm font-bold px-8 py-4 md:mr-10 text-black bg-yellow-200 rounded-full group">
-                  <span className="transition z-50 w-[8rem] inline-block opacity-100 group-hover:opacity-0 duration-700 ease-in-out transform group-hover:-translate-y-4">Discover what we do</span>
+          <div className="h-3/4 max-[1000px]:hidden mt-32 w-1/3 max-[620px]:w-full max-[620px]:px-4 max-[620px]:py-20 flex items-center justify-center   scrollbar-hide p-20">
+            <div className="content top-[35%]     max-[1000px]:hidden left-[16vw] leading-10 flex flex-col z-[500] text-white max-[620px]:w-[20rem] max-[1200px]:w-[48rem] max-[1100px]:right-[25rem] absolute">
+              <h1 className="text-[7vw] max-[1100px]:text-8xl text-center max-[620px]:text-5xl font-bold">Transforming</h1>
+              <div className="flex flex-col  w-[80vw]  h-54 max-[1100px]:h-14  mt-5 items-center   xl:py-4 max-[620px]:py-0 md:flex-row md:items-center md:gap-10">
+                <h1 className="through   text-[7vw]">Aspirations into</h1>
+               
+                <button onClick={handleScrollClick}  className="main-btn m-10 overflow-hidden  hidden md:inline-block text-sm font-bold px-8 py-4 md:mr-10 text-black bg-yellow-200 rounded-full group">
+                  <span className="transition z-50 w-[8rem] inline-block opacity-100 group-hover:opacity-0 duration-700 ease-in-out transform group-hover:-translate-y-4">Discover us</span>
                   <br />
-                  <span className="absolute z-50 -ml-14 transition opacity-0 group-hover:opacity-100 duration-700 ease-in-out transform group-hover:-translate-y-5">Discover what we do</span>
+                  <span className="absolute z-50  -ml-8  text-center transition opacity-0 group-hover:opacity-100 duration-700 ease-in-out transform group-hover:-translate-y-5">Discover us</span>
 
                   <div className='flex items-center justify-center mt-28 ml-14 absolute'>
                   <div id="an-cir1" className="z-1 h-44 transition ease-in duration-500 ml-2 rounded-full absolute w-44 bg-[#9d6cff] anim-circle"></div>
@@ -122,9 +127,9 @@ const page1 = () => {
                 </div>
 
                 </button>
-                </Link>
+                
               </div>
-              <h1 className="text-[10vw]  ml-32 mt-2 pt-3 max-[620px]:ml-0 text-center max-[1100px]:text-8xl max-[620px]:text-5xl leading-8 font-bold">immersion</h1>
+              <h1 className="text-[7vw]  w-full  ml- mt-2 pt-3 max-[620px]:ml-0 text-center max-[1100px]:text-8xl max-[620px]:text-5xl leading-8 font-bold">Achievements</h1>
               <button className="my-6 mx-12 px-8 hidden max-[620px]:block max-[620px]:text-xs py-4 text-black bg-yellow-200 rounded-full">
                 Discover what we do
               </button>
@@ -175,28 +180,24 @@ const page1 = () => {
            {/* <div className="  max-[620px]:mt-32  max-[768px]:ml-[2vw] max-[620px]:ml-[18vw]  max-[520px]:ml-[12vw]  max-[1000px]:mr-[10rem]    md:left-16 flex flex-col items-center justify-center font-extrabold text-white max-[770px]:w-[18rem]  w-[40rem] max-[1000px]:mt-[8rem] absolute"> */}
            <div className="  w-[100%] top-[35%] left-0 flex flex-col items-center justify-center font-extrabold text-white absolute">
 
-              <h1 className="text-[9vw]    text-center max-[620px]:text-5xl leading-3 font-bold">Conversion</h1>
+              <h1 className="text-[7vw]    text-center max-[620px]:text-5xl leading-3 font-bold">Transforming</h1>
 
               <div className="flex flex-col items-center pt-4 max-[620px]:py-0 md:flex-row md:items-center md:gap-4">
-                <h1 className="text-5xl md:text-[10vw] md:ml-20">through</h1>
+                <h1 className="text-5xl md:text-[7vw] md:ml-20">Aspirations into </h1>
                 <Link href="#discover" scroll={true}>
                 <button className="m-12 max-[1020px]:w-[15rem] hidden md:inline-block text-sm font-bold px-8 py-4 md:mr-20 text-black bg-yellow-200 rounded-full max-[620px]:text-xs max-[620px]:px-4 max-[620px]:py-2">
-                  Discover what we do
+                  Discover us
                 </button>
                 </Link>
                 
               </div>
 
-              <h1 className="text-[9vw]  ml-32 max-[620px]:ml-0 max-[770px]:mr-32 max-[620px]:mr-1 max-[620px]:text-5xl leading-10 font-bold">immersion</h1>
+              <h1 className="text-[7vw]  ml-32 max-[620px]:ml-0 max-[770px]:mr-32 max-[620px]:mr-1 max-[620px]:text-5xl leading-10 font-bold">Achievements</h1>
               {/* <h1 className="text-9xl bg-red-200 max-[620px]:text-5xl w-[55rem] leading-8 max-[620px]:text-center text-right font-bold">immersion</h1> */}
-              <Link href="#discover" scroll={true}>
-              <button className="my-6 mx-12 px-8 py-4 mr-20 text-black bg-yellow-200 rounded-full hidden max-[767px]:block max-[770px]:mx-4 max-[620px]:mx-2 max-[620px]:text-xs max-[620px]:px-4 max-[620px]:py-2">
-                Discover what we do
+              
+              <button onClick={handleScrollClick} className="my-6 mx-12 px-8 py-4 mr-20 text-black bg-yellow-200 rounded-full hidden max-[767px]:block max-[770px]:mx-4 max-[620px]:mx-2 max-[620px]:text-xs max-[620px]:px-4 max-[620px]:py-2">
+                Discover us
               </button>
-              </Link>
-              
-
-              
 
             </div>
            </div>

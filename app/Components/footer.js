@@ -4,7 +4,9 @@ import Header from './header'
 import { useEffect } from 'react';
 // import { useState } from 'react';
 import { Blinker } from 'next/font/google';
-import Owl from './assets/images/owl.webp';
+// import Owl from './assets/images/owl.webp';
+// import Anchor from './assets/images/anch'
+import Wheel from './assets/images/Wheel.png'
 import { gsap } from 'gsap';
 // import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -99,7 +101,7 @@ const footer = () => {
         </div>
 
         <div className="owl z-10 mb-10 max-[1150px]:hidden  md:mb-0">
-          <img className="h-80 w-80 mx-auto" src={Owl.src} alt="owl" />
+          <img className="h-80 w-80 mx-auto" src={Wheel.src} alt="owl" />
           <div className="eyes flex justify-center mt-4">
             <div id="left-eye" className="eye mr-2">
               <div className="ball"></div>

@@ -59,8 +59,8 @@ const page4 = () => {
       <section>
         <div className={`page4 max-[900px]:text-6xl text-white text-9xl max-[620px]:pb-10 md:px-40 px-4 flex flex-col items-center justify-center relative`}>
           <h1 className='h1-page4  text-center text-5xl md:text-9xl '>let's make</h1>
-          <div className='flex flex-col   md:flex-row items-center justify-center gap-2 md:gap-8'>
-            <h1 className='text-5xl md:text-9xl '>great work </h1>
+          <div className='flex flex-col md:flex-row items-center justify-center gap-2 md:gap-60'>
+            <h1 className='text-4xl md:text-9xl '>great work </h1>
             <button className="main-btn overflow-hidden m-6  max-[1000px]:-ml-48 max-[1100px]:-ml-48 max-[900px]:-ml-60 hidden md:inline-block text-sm font-bold px-8 py-4 md:mr-10 text-black bg-yellow-200 rounded-full group">
               <span className="transition z-50 text-center  w-[7rem]  inline-block opacity-100 group-hover:opacity-0 duration-700 ease-in-out transform group-hover:-translate-y-4">Get in touch</span>
               <br />

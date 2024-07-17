@@ -17,6 +17,10 @@ html{
     width: 100%;
 }
 
+/* *{
+  scroll-behavior: smooth;
+} */
+
 
 /* page1 btn  */
 
@@ -274,7 +278,7 @@ nav h1{
   position: relative;
   
   height: 45vw;
-  width: 45vw;
+  width: 55vw;
   transition: 50ms;
   /* background-color: red; */
 }
@@ -1093,7 +1097,7 @@ video{
 /*  */
 
 .img1, .img2, .img3, .img4, .img5 {
-  transition: width 0.5s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
 
 .img1 h1 {
@@ -1103,8 +1107,8 @@ video{
 }
 
 .img1:hover h1 {
-  animation: appear 0.7s forwards;
-  animation-delay: 0.5s;
+  animation: appear 0.5s forwards;
+  animation-delay: 0.3s;
   
 }
 
