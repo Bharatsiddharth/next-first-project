@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import logo from './assets/logo_Marine-Vista.png'
 import { gsap } from 'gsap';
 import Header from './header';
 
@@ -91,9 +92,7 @@ const Nav = () => {
                 : 'bg-[#1D1D1F] transition-colors delay-500 duration-500'
                 } max-[620px]:border-none border-transparent z-20 absolute w-full flex justify-between p-3 px-10 max-[620px]:px-4`}
             >
-              <h1 className="z-[1000] font-bold max-[620px]:text-3xl text-4xl text-purple-500">
-                poppr
-              </h1>
+              <img className='h-14 w-14 rounded-full'  src={logo.src} alt="" />
 
               <div className="">
 
