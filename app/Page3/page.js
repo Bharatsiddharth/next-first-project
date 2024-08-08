@@ -1,7 +1,14 @@
 'use client';
 import React, { useEffect } from 'react';
-import { Roboto, NotoSans } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 import gsap from 'gsap'; 
+import Anchor from '../Components/assets/Navy/anchor2-svgrepo-com.svg'
+import Ship from "../Components/assets/Navy/ship-svgrepo-com.svg"
+import Ship2 from "../Components/assets/Navy/ship2-svgrepo-com.svg"
+import Ship3 from "../Components/assets/Navy/ship3-svgrepo-com.svg"
+import ShipWheel from "../Components/assets/Navy/ship-wheel-svgrepo-com.svg"
+import Anchor2 from "../Components/assets/Navy/anchor-svgrepo-com.svg"
+
 
 const roboto = Roboto({ subsets: ['latin'], weight: '400' });
 
@@ -11,7 +18,7 @@ const Page3 = () => {
     const rightelem = document.querySelectorAll(".card1");
 
     rightelem.forEach(function(elem) {
-      let cursorElem = elem.querySelector(".cursor img"); // Select the image inside the cursor div
+      let cursorElem = elem.querySelector(".cursor img");
 
       elem.addEventListener("mouseenter", function() {
         cursorElem.style.opacity = 1;
@@ -31,7 +38,7 @@ const Page3 = () => {
       });
     });
 
-    // Cleanup event listeners on component unmount
+    
     return () => {
       rightelem.forEach(elem => {
         elem.removeEventListener("mouseenter", () => {});
@@ -40,6 +47,8 @@ const Page3 = () => {
       });
     };
   }, []);
+
+
   return (
     <section className={`page3 overflow-hidden relative text-white px-4 lg:px-44 py-10 max-[620px]:py-0 ${roboto.className}`}>
       <h5 className="text-center text-sm font-bold py-20">Transform Your Learning with Our Unique Features</h5>
@@ -48,8 +57,9 @@ const Page3 = () => {
         <div className="card1 w-full flex flex-col max-[620px]:py-5">
           <div className="cursor rotate-12 absolute">
             <img
-              className="h-36 w-32 rounded-2xl opacity-0"
-              src="https://images.unsplash.com/photo-1719150016704-270c5a0deee4?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              style={{ mixBlendMode: 'color-burn' }}
+              className="h-36 w-32 rounded-2xl opacity-0 "
+              src={Anchor.src}
               alt=""
             />
           </div>
@@ -65,10 +75,11 @@ const Page3 = () => {
         </div>
 
         <div className="card1  w-full flex flex-col max-[620px]:py-5">
-          <div className="cursor  rotate-12 absolute">
-            <img
+          <div className="cursor ship  rotate-12 absolute">
+           
+            <img 
               className="h-36 w-32 rounded-2xl opacity-0"
-              src="https://images.unsplash.com/photo-1719150016704-270c5a0deee4?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src={Ship.src}
               alt=""
             />
           </div>
@@ -89,7 +100,7 @@ const Page3 = () => {
           <div className="cursor rotate-12 absolute">
             <img
               className="h-36 w-32 rounded-2xl opacity-0"
-              src="https://example.com/card3.jpg"
+              src={Ship2.src}
               alt=""
             />
           </div>
@@ -104,11 +115,11 @@ const Page3 = () => {
           </div>
         </div>
 
-        <div className="card1 w-full flex flex-col max-[620px]:py-5">
+        <div className="card1  w-full flex flex-col max-[620px]:py-5">
           <div className="cursor rotate-12 absolute">
             <img
-              className="h-36 w-32 rounded-2xl opacity-0"
-              src="https://images.unsplash.com/photo-1719386217659-6bde4641915c?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              className=" h-36 w-32 rounded-2xl opacity-0"
+              src={ShipWheel.src}
               alt=""
             />
           </div>
@@ -130,7 +141,7 @@ const Page3 = () => {
           <div className="cursor rotate-12 absolute">
             <img
               className="h-36 w-32 rounded-2xl opacity-0"
-              src="https://example.com/card3.jpg"
+              src={Anchor2.src}
               alt=""
             />
           </div>
@@ -149,7 +160,7 @@ const Page3 = () => {
           <div className="cursor rotate-12 absolute">
             <img
               className="h-36 w-32 rounded-2xl opacity-0"
-              src="https://images.unsplash.com/photo-1719386217659-6bde4641915c?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src={Ship3.src}
               alt=""
             />
           </div>

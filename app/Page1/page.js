@@ -8,7 +8,7 @@ import { Blinker } from 'next/font/google';
 gsap.registerPlugin(ScrollTrigger);
 // import Img from './Components/assets/images/arrow-up.svg';
 // import Anchor from './Components/assets/Navy/circle-anchor-svgrepo-com.svg'
-import Anchor from './Components/assets/Navy/circle2-anchor-svgrepo-com.svg'
+import Anchor from '../Components/assets/Navy/circle2-anchor-svgrepo-com.svg'
 import Link from 'next/link';
 
 const blinker = Blinker({

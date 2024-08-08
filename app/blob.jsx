@@ -21,7 +21,7 @@ const Blob = () => {
   }, []);
 
   return (
-    <div className='moving-circle   fixed '>
+    <div className='moving-circle fixed '>
       <div 
         id="blob" 
         ref={blobRef} 

@@ -12,11 +12,8 @@ const page5 = () => {
   return (
     <>
       <section className={`page3  overflow-hidden relative text-white py-20 ${roboto.className}`}>
-        <h5 className="text-center text-2xl font-bold py-">Our Team</h5>
-
-
-
-        <div className="gallery   flex h-[70vh] max-[620px]:h-[40vh] w-[100vw]  mt-10 justify-center items-center    lg:gap-4">
+        <h5 className="text-center text-2xl font-bold py-">Our Expertise</h5>
+        <div className="gallery   flex h-[70vh]  max-[620px]:h-[40vh] w-[100vw]  mt-10 justify-center items-center lg:gap-4">
           <div className='img1 relative w-[10vw] h-full border-2 border-[#1D1D1F]   hover:w-1/3 md:hover:w-1/2 lg:hover:w-1/4 '>
           <img className="absolute h-full bg-red-100 w-full object-cover" src="https://images.unsplash.com/photo-1578404096094-4ca3ae40873a?q=80&w=2027&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
 

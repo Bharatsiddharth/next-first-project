@@ -3,6 +3,7 @@ import { Roboto, NotoSans } from 'next/font/google';
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Drag from "../Components/assets/Navy/Drag-anchor-svgrepo-com.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 const roboto = Roboto({ subsets: ['latin'], weight: '400' });
@@ -176,8 +177,9 @@ const page2 = () => {
 
             <div className='main-container'>
 
-            <div className="drag-cursor relative transition duration-300 ease-linear  bg-[#a374ff] text-white max-[620px]:hidden h-28 w-28 flex items-center justify-center opacity-0  rounded-full p-4">
-                    <span className="text-center">Drag <br/> or <br /> Click</span>
+            <div  className="drag-cursor relative transition duration-300 ease-linear  bg-[#a374ff] text-white max-[620px]:hidden h-28 w-28 flex items-center justify-center opacity-0  rounded-full p-4">
+              <img src={Drag.src} className='absolute' alt="" />
+                    <h1 className="text-center">Drag <br/> or <br /> Click</h1>
             </div>
             <div id='Scroller' className="scroller w-[]   transition-all ease-in-out duration-500  rotate-6  scale-105 pl-[80rem] max-[620px]:pl-0 relative max-[620px]:rotate-0 max-[620px]:gap-20 max-[620px]:flex max-[620px]:flex-col max-[620px]:items-center max-[620px]:justify-center    flex gap-10 overflow-x-auto overflow-y-hidden scrollbar-none">
             
